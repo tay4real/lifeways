@@ -1,0 +1,2570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lifeways Groups Pictorial Support Plan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary py-2">
+        <div class="container-fluid  justify-content-center">
+            <a class="navbar-brand" href="#"><img src="./assets/images/logo.svg" alt="Lifeways logo" /></a>
+        </div>
+    </nav>
+
+    <main style="min-height: 80vh;">
+        <section class="mt-5">
+            <h1 class="text-center">Welcome to Lifeways Groups Pictorial Support Plan</h1>
+        </section>
+
+        <div id="welcome-page" class="container my-5">
+            <div class="py-4 text-center bg-body-tertiary rounded-3">
+                <img src="./assets/images/care-giver.jpg" class="rounded-3" alt="Elderly Care Support">
+                <h1 id="display-date" class="text-body-emphasis mt-5"></h1>
+
+                <div class="d-flex justify-content-end align-items-center mt-4">
+                    <button id="nextSlide" class="d-inline-flex align-items-center  btn  btn-lg px-4 rounded-3"
+                        type="button" style="background-color: #003962; color:white">
+                        <p class="h2 m-2">Next</p> ==>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- <section class="container-fluid date-container mt-5 rounded">
+            <div class="row date-container align-items-center">
+                <h2 id="display-date" class="text-center"></h2>
+            </div>
+        </section> -->
+
+        <div id="mood" class="album mt-5 py-5 bg-body-tertiary d-none">
+            <div class="container">
+                <p class="text-center" style="font-size: 50px;">How are you feeling Today?</p>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-3">
+                    <div id="happy" class="col" style="cursor: pointer;">
+                        <div class="card shadow-sm">
+                            <div style="width: 100%; height: 30vh;">
+                                <img src="./assets/images/happy.jpg" class="card-img-top"
+                                    style="object-fit: contain;width: 100%; height: 100%" alt="Happy mood">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text h2 text-center">
+                                    Happy
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div id="excited" class="col" style="cursor: pointer;">
+                        <div class="card shadow-sm">
+                            <div style="width: 100%; height: 30vh;">
+                                <img src="./assets/images/excited.jpg" class="card-img-top"
+                                    style="object-fit: contain;width: 100%; height: 100%" alt="Excited mood">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text h2 text-center">
+                                    Excited
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div id="sad" class="col" style="cursor: pointer;">
+                        <div class="card shadow-sm">
+                            <div style="width: 100%; height: 30vh;">
+                                <img src="./assets/images/sad.jpg" class="card-img-top"
+                                    style="object-fit: contain;width: 100%; height: 100%" alt="Sad mood">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text h2 text-center">
+                                    Sad
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="unwell" class="col" style="cursor: pointer;">
+                        <div class="card shadow-sm">
+                            <div style="width: 100%; height: 30vh;">
+                                <img src="./assets/images/unwell.jpg"
+                                    style="object-fit: contain;width: 100%; height: 100%" class="card-img-top"
+                                    alt="Unwell mood">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text h2 text-center">
+                                    Unwell
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class="d-flex  justify-content-between align-items-center mt-4">
+                    <button id="firstSlide"
+                        class="d-inline-flex align-items-center  btn  btn-lg px-4 rounded-3 bg-secondary text-white"
+                        type="button">
+                        <== <p class="h2 m-2">Back</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- <section class="container-fluid date-container mt-5 rounded">
+            <div class="row date-container align-items-center">
+                <h2 id="display-date" class="text-center"></h2>
+            </div>
+        </section> -->
+
+        <div id="activity1" class="album mt-5 py-5 bg-body-tertiary d-none">
+            <div class="container">
+                <p class="text-center" style="font-size: 50px;">Okay! What do you want now Mr. Andrew McCracken?</p>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+                    <div class="col" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        <div class="card shadow-sm">
+                            <div style="width: 100%; height: 30vh;">
+                                <img src="./assets/images/eat.webp" class="card-img-top"
+                                    style="object-fit: contain;width: 100%; height: 100%" alt="Happy mood">
+                            </div>
+                            <div class="card-body">
+                                <p id="meal" class="card-text h2 text-center">
+                                    I want my Breakfast
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#cup-tea">
+
+                        <div class="card shadow-sm">
+                            <div style="width: 100%; height: 30vh;">
+                                <img src="./assets/images/cup_tea.jpg"
+                                    style="object-fit: contain;width: 100%; height: 100%" class="card-img-top"
+                                    alt="I want a cup of tea">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text h2 text-center">
+                                    I want a cup of tea
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#cookies">
+                        <div class="card shadow-sm">
+                            <div style="width: 100%; height: 30vh;">
+                                <img src="./assets/images/cookies.jpg"
+                                    style="object-fit: contain;width: 100%; height: 100%" class="card-img-top"
+                                    alt="I want some biscuits">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text h2 text-center">
+                                    I want some biscuits
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#toasted-bread">
+                        <div class="card shadow-sm">
+                            <div style="width: 100%; height: 30vh;">
+                                <img src="./assets/images/toasted-bread.jpg"
+                                    style="object-fit: contain;width: 100%; height: 100%" class="card-img-top"
+                                    alt="Unwell mood">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text h2 text-center">
+                                    I want some toasted bread
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#squash">
+                        <div class="card shadow-sm">
+                            <div style="width: 100%; height: 30vh;">
+                                <img src="./assets/images/squash.jpg"
+                                    style="object-fit: contain;width: 100%; height: 100%" class="card-img-top"
+                                    alt="Unwell mood">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text h2 text-center">
+                                    I want some squash
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#tomato-ketchup">
+                        <div class="card shadow-sm">
+                            <div style="width: 100%; height: 30vh;">
+                                <img src="./assets/images/tomato_ketchup.jpg"
+                                    style="object-fit: contain;width: 100%; height: 100%" class="card-img-top"
+                                    alt="Unwell mood">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text h2 text-center">
+                                    Add more Tomato ketchup to my meal
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="d-flex  justify-content-between align-items-center mt-4">
+                    <button id="backSlide1"
+                        class="d-inline-flex align-items-center  btn  btn-lg px-4 rounded-3 bg-secondary text-white"
+                        type="button">
+                        <== <p class="h2 m-2">Back</p>
+                    </button>
+
+                    <button id="nextSlide1" class="d-inline-flex align-items-center  btn  btn-lg px-4 rounded-3"
+                        type="button" style="background-color: #003962; color:white">
+                        <p class="h2 m-2">Next</p> ==>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="activity2" class="album mt-5 py-5 bg-body-tertiary d-none">
+            <div class="container">
+                <p class="text-center" style="font-size: 50px;">Okay! What do you want now Mr. Andrew McCracken?</p>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+
+                    <div class="col" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#raspberry">
+                        <div class="card shadow-sm">
+                            <div style="width: 100%; height: 30vh;">
+                                <img src="./assets/images/raspberry.jpg"
+                                    style="object-fit: contain;width: 100%; height: 100%" class="card-img-top"
+                                    alt="Unwell mood">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text h2 text-center">
+                                    Add Jam to my sandwich
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#man-showering">
+                        <div class="card shadow-sm">
+                            <div style="width: 100%; height: 30vh;">
+                                <img src="./assets/images/man-showering.jpg" class="card-img-top"
+                                    style="object-fit: contain;width: 100%; height: 100%" alt="Excited mood">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text h2 text-center">
+                                    I want to have my Bath
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#switchon-tv">
+                        <div class="card shadow-sm">
+                            <div style="width: 100%; height: 30vh;">
+                                <img src="./assets/images/swichon-tv.jpg" class="card-img-top"
+                                    style="object-fit: contain;width: 100%; height: 100%" alt="Excited mood">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text h2 text-center">
+                                    Switch on My TV
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#all-directions">
+                        <div class="card shadow-sm">
+                            <div style="width: 100%; height: 30vh;">
+                                <img src="./assets/images/all-directions.jpg" class="card-img-top"
+                                    style="object-fit: contain;width: 100%; height: 100%" alt="Sad mood">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text h2 text-center">
+                                    I want to go to ALL DIRECTIONS IN Dartford
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#writings">
+                        <div class="card shadow-sm">
+                            <div style="width: 100%; height: 30vh;">
+                                <img src="./assets/images/writings.jpg"
+                                    style="object-fit: contain;width: 100%; height: 100%" class="card-img-top"
+                                    alt="Unwell mood">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text h2 text-center">
+                                    I want to do some writings
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#man-driving">
+                        <div class="card shadow-sm">
+                            <div style="width: 100%; height: 30vh;">
+                                <img src="./assets/images/drive.jpg"
+                                    style="object-fit: contain;width: 100%; height: 100%" class="card-img-top"
+                                    alt="Unwell mood">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text h2 text-center">
+                                    I want to go for a drive
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="d-flex  justify-content-between align-items-center mt-4">
+                    <button id="backSlide2"
+                        class="d-inline-flex align-items-center  btn  btn-lg px-4 rounded-3 bg-secondary text-white"
+                        type="button">
+                        <== <p class="h2 m-2">Back</p>
+                    </button>
+
+                    <button id="nextSlide2" class="d-inline-flex align-items-center  btn  btn-lg px-4 rounded-3"
+                        type="button" style="background-color: #003962; color:white">
+                        <p class="h2 m-2">Next</p> ==>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="activity3" class="album mt-5 py-5 bg-body-tertiary d-none">
+            <div class="container">
+                <p class="text-center" style="font-size: 50px;">Okay! What do you want now Mr. Andrew McCracken?</p>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+
+                    <div class="col" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#wheelchair">
+                        <div class="card shadow-sm">
+                            <div style="width: 100%; height: 30vh;">
+                                <img src="./assets/images/wheelchair.jpg"
+                                    style="object-fit: contain;width: 100%; height: 100%" class="card-img-top"
+                                    alt="Go out">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text h2 text-center">
+                                    I want to go out in my wheelchair
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#church">
+                        <div class="card shadow-sm">
+                            <div style="width: 100%; height: 30vh;">
+                                <img src="./assets/images/church.webp"
+                                    style="object-fit: contain;width: 100%; height: 100%" class="card-img-top"
+                                    alt="Unwell mood">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text h2 text-center">
+                                    I want to go to Church
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#bed">
+                        <div class="card shadow-sm">
+                            <div style="width: 100%; height: 30vh;">
+                                <img src="./assets/images/bed.jpg" style="object-fit: contain;width: 100%; height: 100%"
+                                    class="card-img-top" alt="Unwell mood">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text h2 text-center">
+                                    I want to go to Bed
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#sweets">
+                        <div class="card shadow-sm">
+                            <div style="width: 100%; height: 30vh;">
+                                <img src="./assets/images/sweets.jpg"
+                                    style="object-fit: contain;width: 100%; height: 100%" class="card-img-top"
+                                    alt="Unwell mood">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text h2 text-center">
+                                    I want some sweets
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#chocolates">
+                        <div class="card shadow-sm">
+                            <div style="width: 100%; height: 30vh;">
+                                <img src="./assets/images/chocolates.jpg"
+                                    style="object-fit: contain;width: 100%; height: 100%" class="card-img-top"
+                                    alt="Unwell mood">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text h2 text-center">
+                                    I want some chocolates
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#pyjamas">
+                        <div class="card shadow-sm">
+                            <div style="width: 100%; height: 30vh;">
+                                <img src="./assets/images/pyjamas.jpg"
+                                    style="object-fit: contain;width: 100%; height: 100%" class="card-img-top"
+                                    alt="Unwell mood">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text h2 text-center">
+                                    I want to change to my pyjamas
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex  justify-content-between align-items-center mt-4">
+                    <button id="backSlide3"
+                        class="d-inline-flex align-items-center  btn  btn-lg px-4 rounded-3 bg-secondary text-white"
+                        type="button">
+                        <== <p class="h2 m-2">Back</p>
+                    </button>
+
+                    <button id="nextSlide3" class="d-inline-flex align-items-center  btn  btn-lg px-4 rounded-3"
+                        type="button" style="background-color: #003962; color:white">
+                        <p class="h2 m-2">Next</p> ==>
+                    </button>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div id="activity4" class="album mt-5 py-5 bg-body-tertiary d-none">
+            <div class="container">
+                <p class="text-center" style="font-size: 50px;">Okay! What do you want now Mr. Andrew McCracken?</p>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+
+                    <div class="col" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#temple-hall">
+                        <div class="card shadow-sm">
+                            <div style="width: 100%; height: 30vh;">
+                                <img src="./assets/images/temple-hall.jpg"
+                                    style="object-fit: contain;width: 100%; height: 100%" class="card-img-top"
+                                    alt="Unwell mood">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text h2 text-center">
+                                    I want to go to Temple Hill community centre
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#phab-club">
+                        <div class="card shadow-sm">
+                            <div style="width: 100%; height: 30vh;">
+                                <img src="./assets/images/phab-club.jpg"
+                                    style="object-fit: contain;width: 100%; height: 100%" class="card-img-top"
+                                    alt="Unwell mood">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text h2 text-center">
+                                    I want to go to Phab Club
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="col" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#bed">
+                        <div class="card shadow-sm">
+                            <div style="width: 100%; height: 30vh;">
+                                <img src="./assets/images/bed.jpg" style="object-fit: contain;width: 100%; height: 100%"
+                                    class="card-img-top" alt="Unwell mood">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text h2 text-center">
+                                    I want to go to Bed
+                                </p>
+
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!-- <div class="col" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#sweets">
+                        <div class="card shadow-sm">
+                            <div style="width: 100%; height: 30vh;">
+                                <img src="./assets/images/sweets.jpg"
+                                    style="object-fit: contain;width: 100%; height: 100%" class="card-img-top"
+                                    alt="Unwell mood">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text h2 text-center">
+                                    I want some sweets
+                                </p>
+
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!-- <div class="col" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#chocolates">
+                        <div class="card shadow-sm">
+                            <div style="width: 100%; height: 30vh;">
+                                <img src="./assets/images/chocolates.jpg"
+                                    style="object-fit: contain;width: 100%; height: 100%" class="card-img-top"
+                                    alt="Unwell mood">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text h2 text-center">
+                                    I want some chocolates
+                                </p>
+
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!-- <div class="col" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#pyjamas">
+                        <div class="card shadow-sm">
+                            <div style="width: 100%; height: 30vh;">
+                                <img src="./assets/images/pyjamas.jpg"
+                                    style="object-fit: contain;width: 100%; height: 100%" class="card-img-top"
+                                    alt="Unwell mood">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text h2 text-center">
+                                    I want to change to my pyjamas
+                                </p>
+
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="d-inline-flex gap-2 mt-4">
+                    <button id="backSlide4"
+                        class="d-inline-flex align-items-center  btn  btn-lg px-4 rounded-3 bg-secondary text-white"
+                        type="button">
+                        <== <p class="h2 m-2">Back</p>
+                    </button>
+
+
+                </div>
+            </div>
+        </div>
+
+
+        <div id="activity-sad" class="album mt-5 py-5 bg-body-tertiary d-none">
+            <div class="container">
+                <p class="text-center d-flex align-items-center justify-content-center" style="font-size: 50px;">Feeling
+                    Sad? <img src="./assets/images/sad.png" style="margin-left: 10px" width="100" alt="feeling sad"></p>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#wet-bed">
+                        <div class="card shadow-sm">
+                            <div style="width: 100%; height: 30vh;">
+                                <img src="./assets/images/wet-bed.jpg" class="card-img-top"
+                                    style="object-fit: cover;width: 100%; height: 100%" alt="I wet my bed">
+                            </div>
+                            <div class="card-body">
+                                <p id="meal" class="card-text h2 text-center">
+                                    I wet my bed
+
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#bad-dream">
+
+                        <div class="card shadow-sm">
+                            <div style="width: 100%; height: 30vh;">
+                                <img src="./assets/images/bad-dream.jpg"
+                                    style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
+                                    alt="I had a bad dream">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text h2 text-center">
+                                    I had a bad dream
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+
+                    <div class="col" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#slipped">
+                        <div class="card shadow-sm">
+                            <div style="width: 100%; height: 30vh;">
+                                <img src="./assets/images/slipped.jpg"
+                                    style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
+                                    alt="I slipped while going to toilet">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text h2 text-center">
+                                    I slipped while going to toilet
+
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#hot-room">
+                        <div class="card shadow-sm">
+                            <div style="width: 100%; height: 30vh;">
+                                <img src="./assets/images/hot-room.jpg"
+                                    style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
+                                    alt="Because my room was too hot">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text h2 text-center">
+                                    Because my room was too hot
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#cold-room">
+                        <div class="card shadow-sm">
+                            <div style="width: 100%; height: 30vh;">
+                                <img src="./assets/images/cold-room.jpg"
+                                    style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
+                                    alt="My room was too cold">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text h2 text-center">
+                                    My room was too cold
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="d-inline-flex gap-2 mt-4">
+                    <button id="backActivitySad"
+                        class="d-inline-flex align-items-center  btn  btn-lg px-4 rounded-3 bg-secondary text-white"
+                        type="button">
+                        <== <p class="h2 m-2">Back</p>
+                    </button>
+
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <div id="activity-unwell" class="album mt-5 py-5 bg-body-tertiary d-none">
+            <div class="container">
+                <p class="text-center d-flex align-items-center justify-content-center" style="font-size: 50px;">Unwell
+                </p>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-3">
+                    <div class="col" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#feeling-unwell">
+                        <div class="card shadow-sm">
+                            <div style="width: 100%; height: 60vh;">
+                                <img src="./assets/images/feelin-unwell.jpg" class="card-img-top"
+                                    style="object-fit: contain;width: 100%; height: 100%"
+                                    alt="Just feeling unwell, no pain actually">
+                            </div>
+                            <div class="card-body">
+                                <p id="meal" class="card-text h2 text-center">
+                                    Just feeling unwell, no pain actually
+
+
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#feeling-pain">
+
+                        <div class="card shadow-sm">
+                            <div style="width: 100%; height: 60vh;">
+                                <img src="./assets/images/feeling-pain.jpg"
+                                    style="object-fit: contain;width: 100%; height: 100%" class="card-img-top"
+                                    alt="I had a bad dream">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text h2 text-center">
+                                    Feeling pain. Where?
+
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#sore-throat">
+                    
+                        <div class="card shadow-sm">
+                            <div style="width: 100%; height: 60vh;">
+                                <img src="./assets/images/sore-throat.jpg" style="object-fit: contain;width: 100%; height: 100%"
+                                    class="card-img-top" alt="I had a bad dream">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text h2 text-center">
+                                    I am having sore throat
+
+                    
+                                </p>
+                    
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#blocked-nose">
+                    
+                        <div class="card shadow-sm">
+                            <div style="width: 100%; height: 60vh;">
+                                <img src="./assets/images/blocked-nose.jpg" style="object-fit: contain;width: 100%; height: 100%"
+                                    class="card-img-top" alt="I am having blocked nose.
+
+">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text h2 text-center">
+                                    I am having blocked nose
+
+                    
+                                </p>
+                    
+                            </div>
+                        </div>
+                    </div>
+                    
+
+
+
+
+
+                </div>
+                <div class="d-inline-flex gap-2 mt-4">
+                    <button id="backActivityUnwell"
+                        class="d-inline-flex align-items-center  btn  btn-lg px-4 rounded-3 bg-secondary text-white"
+                        type="button">
+                        <== <p class="h2 m-2">Back</p>
+                    </button>
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="meal-title" aria-hidden="true">
+            <div class="modal-dialog modal-xl" style="width: 100%">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title h2 " id="meal-title">Modal title</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div id="meal-options" class="modal-body">
+                        <p class="h1 text-center py-2">Friday Dinner</p>
+                        <div class="d-flex gap-2 justify-content-center  rounded-3 p-3 choice"
+                            style="border: 2px solid orange; cursor: pointer;" data-bs-toggle="modal"
+                            data-bs-target="#dinner1" data-bs-dismiss="modal">
+
+                            <div class="card shadow-sm" style="width: 15em;">
+                                <div style="width: 100%; height: 30vh;">
+                                    <img src="./assets/images/fish-chips.jpg"
+                                        style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
+                                        alt="Mashed Potatoes">
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text h4 text-center">
+                                        Fish and Chips
+                                    </p>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+                    <div class="modal-footer">
+
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="modal fade" id="breakfast1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="meal-title" aria-hidden="true">
+            <div class="modal-dialog modal-xl" style="width: 100%">
+                <div class="modal-content">
+
+                    <div id="meal-options" class="modal-body">
+                        <p class="h1 text-center py-2">Option 1</p>
+                        <div class="d-flex gap-2 justify-content-center  rounded-3 p-3 choice"
+                            style="border: 2px solid orange; cursor: pointer;" data-bs-dismiss="modal">
+
+                            <div class="card shadow-sm" style="width: 15em;">
+                                <div style="width: 100%; height: 30vh;">
+                                    <img src="./assets/images/cereal1.jpg"
+                                        style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
+                                        alt="Cereal">
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text h4 text-center">
+                                        Cereal
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div style="width: 40px; height: 40px;">
+                                <img src="./assets/images/plus.png" style="object-fit: cover;width: 100%; height: 100%"
+                                    class="card-img-top" alt="Unwell mood">
+                            </div>
+                            <div class="card shadow-sm" style="width: 15em;">
+                                <div style="width: 100%; height: 30vh;">
+                                    <img src="./assets/images/sandwich-ham.jpg"
+                                        style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
+                                        alt="Sandwich">
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text h4 text-center">
+                                        Sandwich
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div style="width: 40px; height: 40px;">
+                                <img src="./assets/images/plus.png" style="object-fit: cover;width: 100%; height: 100%"
+                                    class="card-img-top" alt="Unwell mood">
+                            </div>
+                            <div class="card shadow-sm" style="width: 15em;">
+                                <div style="width: 100%; height: 30vh;">
+                                    <img src="./assets/images/actimel.jpg"
+                                        style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
+                                        alt="Actimel">
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text h4 text-center">
+                                        Actimel
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div style="width: 40px; height: 40px;">
+                                <img src="./assets/images/plus.png" style="object-fit: cover;width: 100%; height: 100%"
+                                    class="card-img-top" alt="Unwell mood">
+                            </div>
+                            <div class="card shadow-sm" style="width: 15em;">
+                                <div style="width: 100%; height: 30vh;">
+                                    <img src="./assets/images/medication.jpg"
+                                        style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
+                                        alt="Medication">
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text h4 text-center">
+                                        Medication
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal fade" id="breakfast2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="meal-title" aria-hidden="true">
+            <div class="modal-dialog modal-xl" style="width: 100%">
+                <div class="modal-content">
+
+                    <div id="meal-options" class="modal-body">
+
+                        <p class="h1 text-center py-2 m-0">Option 2</p>
+                        <div class="d-flex gap-2 justify-content-center  rounded-3 p-3"
+                            style="border: 2px solid orange; cursor: pointer;" data-bs-dismiss="modal">
+
+                            <div class="card shadow-sm" style="width: 15em;">
+                                <div style="width: 100%; height: 30vh;">
+                                    <img src="./assets/images/cereal2.jpg"
+                                        style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
+                                        alt="Cereal">
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text h4 text-center">
+                                        Cereal
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div style="width: 40px; height: 40px;">
+                                <img src="./assets/images/plus.png" style="object-fit: cover;width: 100%; height: 100%"
+                                    class="card-img-top" alt="Unwell mood">
+                            </div>
+                            <div class="card shadow-sm" style="width: 15em;">
+                                <div style="width: 100%; height: 30vh;">
+                                    <img src="./assets/images/sandwich-ham.jpg"
+                                        style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
+                                        alt="Sandwich">
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text h4 text-center">
+                                        Sandwich
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div style="width: 40px; height: 40px;">
+                                <img src="./assets/images/plus.png" style="object-fit: cover;width: 100%; height: 100%"
+                                    class="card-img-top" alt="Unwell mood">
+                            </div>
+                            <div class="card shadow-sm" style="width: 15em;">
+                                <div style="width: 100%; height: 30vh;">
+                                    <img src="./assets/images/actimel.jpg"
+                                        style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
+                                        alt="Actimel">
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text h4 text-center">
+                                        Actimel
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div style="width: 40px; height: 40px;">
+                                <img src="./assets/images/plus.png" style="object-fit: cover;width: 100%; height: 100%"
+                                    class="card-img-top" alt="Unwell mood">
+                            </div>
+                            <div class="card shadow-sm" style="width: 15em;">
+                                <div style="width: 100%; height: 30vh;">
+                                    <img src="./assets/images/medication.jpg"
+                                        style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
+                                        alt="Medication">
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text h4 text-center">
+                                        Medication
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="modal fade" id="lunch1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="meal-title" aria-hidden="true">
+            <div class="modal-dialog modal-xl" style="width: 100%">
+                <div class="modal-content">
+
+                    <div id="meal-options" class="modal-body">
+                        <p class="h1 text-center py-2">Option 1</p>
+                        <div class="d-flex gap-2 justify-content-center  rounded-3 p-3"
+                            style="border: 2px solid orange; cursor: pointer;" data-bs-toggle="modal"
+                            data-bs-target="#lunch1" data-bs-dismiss="modal">
+                            <div class="card shadow-sm" style="width: 15em;">
+                                <div style="width: 100%; height: 30vh;"><img src="./assets/images/cup_tea.jpg"
+                                        style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
+                                        alt="Cup of Tea/ Coffee"></div>
+                                <div class="card-body">
+                                    <p class="card-text h4 text-center">Cup of Tea/ Coffee</p>
+                                </div>
+                            </div>
+                            <div style="width: 40px; height: 40px;"><img src="./assets/images/plus.png"
+                                    style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
+                                    alt="Unwell mood"></div>
+                            <div class="card shadow-sm" style="width: 15em;">
+                                <div style="width: 100%; height: 30vh;"><img src="./assets/images/sandwich-ham.jpg"
+                                        style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
+                                        alt="Sandwich with ham and Butter"></div>
+                                <div class="card-body">
+                                    <p class="card-text h4 text-center">Sandwich with ham and Butter</p>
+                                </div>
+                            </div>
+                            <div style="width: 40px; height: 40px;"><img src="./assets/images/plus.png"
+                                    style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
+                                    alt="Unwell mood"></div>
+                            <div class="card shadow-sm" style="width: 15em;">
+                                <div style="width: 100%; height: 30vh;"><img src="./assets/images/raspberry.jpg"
+                                        style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
+                                        alt="Raspberry"></div>
+                                <div class="card-body">
+                                    <p class="card-text h4 text-center">Raspberry</p>
+                                </div>
+                            </div>
+                            <div style="width: 40px; height: 40px;"><img src="./assets/images/plus.png"
+                                    style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
+                                    alt="Unwell mood"></div>
+                            <div class="card shadow-sm" style="width: 15em;">
+                                <div style="width: 100%; height: 30vh;"><img src="./assets/images/yoghurt.jpg"
+                                        style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
+                                        alt="Yoghurt"></div>
+                                <div class="card-body">
+                                    <p class="card-text h4 text-center">Yoghurt</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="modal-footer">
+
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="modal fade" id="lunch2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="meal-title" aria-hidden="true">
+            <div class="modal-dialog modal-xl" style="width: 100%">
+                <div class="modal-content">
+
+                    <div id="meal-options" class="modal-body">
+
+
+                        <p class="h1 text-center py-2 m-0">Option 2</p>
+                        <div class="d-flex gap-2 justify-content-center  rounded-3 p-3"
+                            style="border: 2px solid orange; cursor: pointer;" data-bs-dismiss="modal">
+                            <div class="card shadow-sm" style="width: 15em;">
+                                <div style="width: 100%; height: 30vh;"><img src="./assets/images/cup_tea.jpg"
+                                        style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
+                                        alt="Cup of Tea/ Coffee"></div>
+                                <div class="card-body">
+                                    <p class="card-text h4 text-center">Cup of Tea/ Coffee</p>
+                                </div>
+                            </div>
+                            <div style="width: 40px; height: 40px;"><img src="./assets/images/plus.png"
+                                    style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
+                                    alt="Unwell mood"></div>
+                            <div class="card shadow-sm" style="width: 15em;">
+                                <div style="width: 100%; height: 30vh;"><img src="./assets/images/sandwish-omelet.jpg"
+                                        style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
+                                        alt="Sandwich with Omelette"></div>
+                                <div class="card-body">
+                                    <p class="card-text h4 text-center">Sandwich with Omelette</p>
+                                </div>
+                            </div>
+                            <div style="width: 40px; height: 40px;"><img src="./assets/images/plus.png"
+                                    style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
+                                    alt="Unwell mood"></div>
+                            <div class="card shadow-sm" style="width: 15em;">
+                                <div style="width: 100%; height: 30vh;"><img src="./assets/images/raspberry.jpg"
+                                        style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
+                                        alt="Raspberry"></div>
+                                <div class="card-body">
+                                    <p class="card-text h4 text-center">Raspberry</p>
+                                </div>
+                            </div>
+                            <div style="width: 40px; height: 40px;"><img src="./assets/images/plus.png"
+                                    style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
+                                    alt="Unwell mood">' +
+
+                                '</div>
+                            <div class="card shadow-sm" style="width: 15em;">
+                                <div style="width: 100%; height: 30vh;"><img src="./assets/images/yoghurt.jpg"
+                                        style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
+                                        alt="Yoghurt"></div>
+                                <div class="card-body">
+                                    <p class="card-text h4 text-center">Yoghurt</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="modal-footer">
+
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="modal fade" id="eatout1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="meal-title" aria-hidden="true">
+            <div class="modal-dialog modal-xl" style="width: 100%">
+                <div class="modal-content">
+
+                    <div id="meal-options" class="modal-body">
+                        <p class="h1 text-center py-2 m-0">I want to Have my Lunch Out</p>
+                        <div class="d-flex gap-2 justify-content-center  rounded-3 p-3">
+                            <div class="card shadow-sm" style="border: 2px solid orange;width: 15em;cursor: pointer;"
+                                data-bs-dismiss="modal">
+                                <div style="width: 100%; height: 30vh;"><img src="./assets/images/McDonald.png"
+                                        style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
+                                        alt="MCDONALD"></div>
+                                <div class="card-body">
+                                    <p class="card-text h4 text-center">MCDONALD</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="modal fade" id="eatout2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="meal-title" aria-hidden="true">
+            <div class="modal-dialog modal-xl" style="width: 100%">
+                <div class="modal-content">
+
+                    <div id="meal-options" class="modal-body">
+                        <p class="h1 text-center py-2 m-0">I want to Have my Lunch Out</p>
+                        <div class="d-flex gap-2 justify-content-center  rounded-3 p-3">
+
+                            <div class="card shadow-sm" style="border: 2px solid orange;width: 15em;cursor: pointer;"
+                                data-bs-dismiss="modal">
+                                <div style="width: 100%; height: 30vh;"><img src="./assets/images/KFC.jpg"
+                                        style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
+                                        alt="KFC"></div>
+                                <div class="card-body">
+                                    <p class="card-text h4 text-center">KFC</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="modal fade" id="eatout3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="meal-title" aria-hidden="true">
+            <div class="modal-dialog modal-xl" style="width: 100%">
+                <div class="modal-content">
+
+                    <div id="meal-options" class="modal-body">
+                        <p class="h1 text-center py-2 m-0">I want to Have my Lunch Out</p>
+                        <div class="d-flex gap-2 justify-content-center  rounded-3 p-3">
+
+                            <div class="card shadow-sm" style="border: 2px solid orange;width: 15em;cursor: pointer;"
+                                data-bs-dismiss="modal">
+                                <div style="width: 100%; height: 30vh;"><img src="./assets/images/asda-dartford.jpg"
+                                        style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
+                                        alt="KFC"></div>
+                                <div class="card-body">
+                                    <p class="card-text h4 text-center">ASDA CAFE IN DARTFORD</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="modal fade" id="eatout4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="meal-title" aria-hidden="true">
+            <div class="modal-dialog modal-xl" style="width: 100%">
+                <div class="modal-content">
+
+                    <div id="meal-options" class="modal-body">
+                        <p class="h1 text-center py-2 m-0">I want to Have my Lunch Out</p>
+                        <div class="d-flex gap-2 justify-content-center  rounded-3 p-3">
+
+                            <div class="card shadow-sm" style="border: 2px solid orange;width: 15em;cursor: pointer;"
+                                data-bs-dismiss="modal">
+                                <div style="width: 100%; height: 30vh;"><img src="./assets/images/Time-Plaice.jpg"
+                                        style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
+                                        alt="KFC"></div>
+                                <div class="card-body">
+                                    <p class="card-text h4 text-center">Time & Plaice</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="modal fade" id="eatout5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="meal-title" aria-hidden="true">
+            <div class="modal-dialog modal-xl" style="width: 100%">
+                <div class="modal-content">
+
+                    <div id="meal-options" class="modal-body">
+                        <p class="h1 text-center py-2 m-0">I want to Have my Lunch Out</p>
+                        <div class="d-flex gap-2 justify-content-center  rounded-3 p-3">
+
+                            <div class="card shadow-sm" style="border: 2px solid orange;width: 15em;cursor: pointer;"
+                                data-bs-dismiss="modal">
+                                <div style="width: 100%; height: 30vh;"><img
+                                        src="./assets/images/coastacafe-dartford.jpg"
+                                        style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
+                                        alt="KFC"></div>
+                                <div class="card-body">
+                                    <p class="card-text h4 text-center">COSTA CAFE DARTFORD</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="modal fade" id="dinner1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="meal-title" aria-hidden="true">
+            <div class="modal-dialog modal-xl" style="width: 100%">
+                <div class="modal-content">
+
+                    <div id="meal-options" class="modal-body">
+                        <p class="h1 text-center py-2">Option 1</p>
+                        <div class="d-flex gap-2 justify-content-center  rounded-3 p-3 choice"
+                            style="border: 2px solid orange; cursor: pointer;" data-bs-dismiss="modal">
+
+                            <div class="card shadow-sm" style="width: 15em;">
+                                <div style="width: 100%; height: 30vh;">
+                                    <img src="./assets/images/mashed-potatoes.jpg"
+                                        style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
+                                        alt="Mashed Potatoes">
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text h4 text-center">
+                                        Mashed Potatoes
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div style="width: 40px; height: 40px;">
+                                <img src="./assets/images/plus.png" style="object-fit: cover;width: 100%; height: 100%"
+                                    class="card-img-top" alt="Unwell mood">
+                            </div>
+                            <div class="card shadow-sm" style="width: 15em;">
+                                <div style="width: 100%; height: 30vh;">
+                                    <img src="./assets/images/sauce.jpg"
+                                        style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
+                                        alt="Sandwich">
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text h4 text-center">
+                                        Already made sauce
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div style="width: 40px; height: 40px;">
+                                <img src="./assets/images/plus.png" style="object-fit: cover;width: 100%; height: 100%"
+                                    class="card-img-top" alt="Unwell mood">
+                            </div>
+                            <div class="card shadow-sm" style="width: 15em;">
+                                <div style="width: 100%; height: 30vh;">
+                                    <img src="./assets/images/vegetables.webp"
+                                        style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
+                                        alt="Vegetable">
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text h4 text-center">
+                                        Vegetable
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div style="width: 40px; height: 40px;">
+                                <img src="./assets/images/plus.png" style="object-fit: cover;width: 100%; height: 100%"
+                                    class="card-img-top" alt="Unwell mood">
+                            </div>
+                            <div class="card shadow-sm" style="width: 15em;">
+                                <div style="width: 100%; height: 30vh;">
+                                    <img src="./assets/images/cup_tea.jpg"
+                                        style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
+                                        alt="Medication">
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text h4 text-center">
+                                        Cup of tea/coffee
+
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="modal fade" id="dinner2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="meal-title" aria-hidden="true">
+            <div class="modal-dialog modal-xl" style="width: 100%">
+                <div class="modal-content">
+
+                    <div id="meal-options" class="modal-body">
+                        <p class="h1 text-center py-2 m-0">Option 2</p>
+                        <div class="d-flex gap-2 justify-content-center  rounded-3 p-3 choice"
+                            style="border: 2px solid orange; cursor: pointer;" data-bs-toggle="modal"
+                            data-bs-target="#dinner2" data-bs-dismiss="modal">
+
+                            <div class="card shadow-sm" style="width: 15em;">
+                                <div style="width: 100%; height: 30vh;">
+                                    <img src="./assets/images/rice.jpg"
+                                        style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
+                                        alt="Rice">
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text h4 text-center">
+                                        Rice
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div style="width: 40px; height: 40px;">
+                                <img src="./assets/images/plus.png" style="object-fit: cover;width: 100%; height: 100%"
+                                    class="card-img-top" alt="Unwell mood">
+                            </div>
+                            <div class="card shadow-sm" style="width: 15em;">
+                                <div style="width: 100%; height: 30vh;">
+                                    <img src="./assets/images/sauce.jpg"
+                                        style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
+                                        alt="Sandwich">
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text h4 text-center">
+                                        Already made sauce
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div style="width: 40px; height: 40px;">
+                                <img src="./assets/images/plus.png" style="object-fit: cover;width: 100%; height: 100%"
+                                    class="card-img-top" alt="Unwell mood">
+                            </div>
+                            <div class="card shadow-sm" style="width: 15em;">
+                                <div style="width: 100%; height: 30vh;">
+                                    <img src="./assets/images/vegetables.webp"
+                                        style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
+                                        alt="Vegetable">
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text h4 text-center">
+                                        Vegetable
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div style="width: 40px; height: 40px;">
+                                <img src="./assets/images/plus.png" style="object-fit: cover;width: 100%; height: 100%"
+                                    class="card-img-top" alt="Unwell mood">
+                            </div>
+                            <div class="card shadow-sm" style="width: 15em;">
+                                <div style="width: 100%; height: 30vh;">
+                                    <img src="./assets/images/cup_tea.jpg"
+                                        style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
+                                        alt="Medication">
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text h4 text-center">
+                                        Cup of tea/coffee
+
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="modal fade" id="dinner3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="meal-title" aria-hidden="true">
+            <div class="modal-dialog modal-xl" style="width: 100%">
+                <div class="modal-content">
+
+                    <div id="meal-options" class="modal-body">
+                        <p class="h1 text-center py-2 m-0">Option 3</p>
+                        <div class="d-flex gap-2 justify-content-center  rounded-3 p-3 choice"
+                            style="border: 2px solid orange; cursor: pointer;" data-bs-toggle="modal"
+                            data-bs-target="#dinner3" data-bs-dismiss="modal">
+
+                            <div class="card shadow-sm" style="width: 15em;">
+                                <div style="width: 100%; height: 30vh;">
+                                    <img src="./assets/images/Spaghetti.jpg"
+                                        style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
+                                        alt="Spaghetti">
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text h4 text-center">
+                                        Spaghetti
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div style="width: 40px; height: 40px;">
+                                <img src="./assets/images/plus.png" style="object-fit: cover;width: 100%; height: 100%"
+                                    class="card-img-top" alt="Unwell mood">
+                            </div>
+                            <div class="card shadow-sm" style="width: 15em;">
+                                <div style="width: 100%; height: 30vh;">
+                                    <img src="./assets/images/sauce.jpg"
+                                        style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
+                                        alt="Sandwich">
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text h4 text-center">
+                                        Already made sauce
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div style="width: 40px; height: 40px;">
+                                <img src="./assets/images/plus.png" style="object-fit: cover;width: 100%; height: 100%"
+                                    class="card-img-top" alt="Unwell mood">
+                            </div>
+                            <div class="card shadow-sm" style="width: 15em;">
+                                <div style="width: 100%; height: 30vh;">
+                                    <img src="./assets/images/vegetables.webp"
+                                        style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
+                                        alt="Vegetable">
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text h4 text-center">
+                                        Vegetable
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div style="width: 40px; height: 40px;">
+                                <img src="./assets/images/plus.png" style="object-fit: cover;width: 100%; height: 100%"
+                                    class="card-img-top" alt="Unwell mood">
+                            </div>
+                            <div class="card shadow-sm" style="width: 15em;">
+                                <div style="width: 100%; height: 30vh;">
+                                    <img src="./assets/images/cup_tea.jpg"
+                                        style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
+                                        alt="Medication">
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text h4 text-center">
+                                        Cup of tea/coffee
+
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="modal fade" id="dinner4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="meal-title" aria-hidden="true">
+            <div class="modal-dialog modal-xl" style="width: 100%">
+                <div class="modal-content">
+
+                    <div id="meal-options" class="modal-body">
+                        <p class="h1 text-center py-2 m-0">Option 4</p>
+                        <div class="d-flex gap-2 justify-content-center  rounded-3 p-3 choice"
+                            style="border: 2px solid orange; cursor: pointer;" data-bs-toggle="modal"
+                            data-bs-target="#dinner4" data-bs-dismiss="modal">
+
+                            <div class="card shadow-sm" style="width: 15em;">
+                                <div style="width: 100%; height: 30vh;">
+                                    <img src="./assets/images/pasta.jpg"
+                                        style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
+                                        alt="Pasta">
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text h4 text-center">
+                                        Pasta
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div style="width: 40px; height: 40px;">
+                                <img src="./assets/images/plus.png" style="object-fit: cover;width: 100%; height: 100%"
+                                    class="card-img-top" alt="Unwell mood">
+                            </div>
+                            <div class="card shadow-sm" style="width: 15em;">
+                                <div style="width: 100%; height: 30vh;">
+                                    <img src="./assets/images/sauce.jpg"
+                                        style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
+                                        alt="Sandwich">
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text h4 text-center">
+                                        Already made sauce
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div style="width: 40px; height: 40px;">
+                                <img src="./assets/images/plus.png" style="object-fit: cover;width: 100%; height: 100%"
+                                    class="card-img-top" alt="Unwell mood">
+                            </div>
+                            <div class="card shadow-sm" style="width: 15em;">
+                                <div style="width: 100%; height: 30vh;">
+                                    <img src="./assets/images/vegetables.webp"
+                                        style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
+                                        alt="Vegetable">
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text h4 text-center">
+                                        Vegetable
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div style="width: 40px; height: 40px;">
+                                <img src="./assets/images/plus.png" style="object-fit: cover;width: 100%; height: 100%"
+                                    class="card-img-top" alt="Unwell mood">
+                            </div>
+                            <div class="card shadow-sm" style="width: 15em;">
+                                <div style="width: 100%; height: 30vh;">
+                                    <img src="./assets/images/cup_tea.jpg"
+                                        style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
+                                        alt="Medication">
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text h4 text-center">
+                                        Cup of tea/coffee
+
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="modal fade" id="dinner5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="meal-title" aria-hidden="true">
+            <div class="modal-dialog modal-xl" style="width: 100%">
+                <div class="modal-content">
+        
+                    <div id="meal-options" class="modal-body">
+                        <p class="h1 text-center py-2 m-0">Option 5</p>
+                        <div class="d-flex gap-2 justify-content-center  rounded-3 p-3 choice"
+                            style="border: 2px solid orange; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#dinner4"
+                            data-bs-dismiss="modal">
+        
+                            <div class="card shadow-sm" style="width: 15em;">
+                                <div style="width: 100%; height: 30vh;">
+                                    <img src="./assets/images/cheese-onionpie.jpg" style="object-fit: cover;width: 100%; height: 100%"
+                                        class="card-img-top" alt="Cheese and onion pie with corned beef and baked beans">
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text h4 text-center">
+                                        Cheese and onion pie with corned beef and baked beans
+                                    </p>
+        
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+
+
+        <div class="modal fade" id="cup-tea" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="meal-title" aria-hidden="true">
+            <div class="modal-dialog " style="width: 100%">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+
+
+                        <div class="card shadow-sm">
+                            <div style="width: 100%; height: 30vh;">
+                                <img src="./assets/images/cup_tea.jpg"
+                                    style="object-fit: contain;width: 100%; height: 100%" class="card-img-top"
+                                    alt="I want a cup of tea">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text h2 text-center">
+                                    I want a cup of tea
+                                </p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="modal fade" id="cookies" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="meal-title" aria-hidden="true">
+            <div class="modal-dialog " style="width: 100%">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+
+
+                        <div class="card shadow-sm">
+                            <div style="width: 100%; height: 30vh;">
+                                <img src="./assets/images/cookies.jpg"
+                                    style="object-fit: contain;width: 100%; height: 100%" class="card-img-top"
+                                    alt="I want some biscuits">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text h2 text-center">
+                                    I want some biscuits
+                                </p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="modal fade" id="toasted-bread" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="meal-title" aria-hidden="true">
+            <div class="modal-dialog " style="width: 100%">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+
+
+                        <div class="card shadow-sm">
+                            <div style="width: 100%; height: 30vh;">
+                                <img src="./assets/images/toasted-bread.jpg"
+                                    style="object-fit: contain;width: 100%; height: 100%" class="card-img-top"
+                                    alt="Unwell mood">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text h2 text-center">
+                                    I want some toasted bread
+                                </p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="modal fade" id="squash" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="meal-title" aria-hidden="true">
+            <div class="modal-dialog " style="width: 100%">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+
+
+                        <div style="width: 100%; height: 30vh;">
+                            <img src="./assets/images/squash.jpg" style="object-fit: contain;width: 100%; height: 100%"
+                                class="card-img-top" alt="Unwell mood">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text h2 text-center">
+                                I want some squash
+                            </p>
+
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="modal fade" id="tomato-ketchup" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="meal-title" aria-hidden="true">
+            <div class="modal-dialog " style="width: 100%">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+
+
+                        <div style="width: 100%; height: 30vh;">
+                            <img src="./assets/images/tomato_ketchup.jpg"
+                                style="object-fit: contain;width: 100%; height: 100%" class="card-img-top"
+                                alt="Unwell mood">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text h2 text-center">
+                                Add more Tomato ketchup to my meal
+                            </p>
+
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="modal fade" id="raspberry" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="meal-title" aria-hidden="true">
+            <div class="modal-dialog " style="width: 100%">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+
+
+                        <div style="width: 100%; height: 30vh;">
+                            <img src="./assets/images/raspberry.jpg"
+                                style="object-fit: contain;width: 100%; height: 100%" class="card-img-top"
+                                alt="Unwell mood">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text h2 text-center">
+                                Add Raspberry to my sandwich
+                            </p>
+
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="modal fade" id="man-showering" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="meal-title" aria-hidden="true">
+            <div class="modal-dialog " style="width: 100%">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+
+
+                        <div style="width: 100%; height: 30vh;">
+                            <img src="./assets/images/man-showering.jpg" class="card-img-top"
+                                style="object-fit: contain;width: 100%; height: 100%" alt="Excited mood">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text h2 text-center">
+                                I want to have my Shower
+                            </p>
+
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="modal fade" id="switchon-tv" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="meal-title" aria-hidden="true">
+            <div class="modal-dialog " style="width: 100%">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+
+
+                        <div style="width: 100%; height: 30vh;">
+                            <img src="./assets/images/swichon-tv.jpg" class="card-img-top"
+                                style="object-fit: contain;width: 100%; height: 100%" alt="Excited mood">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text h2 text-center">
+                                Switch on My TV
+                            </p>
+
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="modal fade" id="all-directions" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="meal-title" aria-hidden="true">
+            <div class="modal-dialog " style="width: 100%">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+
+
+                        <div style="width: 100%; height: 30vh;">
+                            <img src="./assets/images/all-directions.jpg" class="card-img-top"
+                                style="object-fit: contain;width: 100%; height: 100%" alt="Sad mood">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text h2 text-center">
+                                I want to go to ALL DIRECTIONS IN Dartford
+                            </p>
+
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="modal fade" id="temple-hall" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="meal-title" aria-hidden="true">
+            <div class="modal-dialog " style="width: 100%">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+
+
+                        <div style="width: 100%; height: 30vh;">
+                            <img src="./assets/images/temple-hall.jpg"
+                                style="object-fit: contain;width: 100%; height: 100%" class="card-img-top"
+                                alt="Unwell mood">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text h2 text-center">
+                                I want to go to Temple Hill community centre
+                            </p>
+
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="modal fade" id="writings" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="meal-title" aria-hidden="true">
+            <div class="modal-dialog " style="width: 100%">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+
+
+                        <div style="width: 100%; height: 30vh;">
+                            <img src="./assets/images/writings.jpg"
+                                style="object-fit: contain;width: 100%; height: 100%" class="card-img-top"
+                                alt="Unwell mood">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text h2 text-center">
+                                I want to do some writings
+                            </p>
+
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="modal fade" id="man-driving" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="meal-title" aria-hidden="true">
+            <div class="modal-dialog " style="width: 100%">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+
+
+                        <div style="width: 100%; height: 30vh;">
+                            <img src="./assets/images/drive.jpg"
+                                style="object-fit: contain;width: 100%; height: 100%" class="card-img-top"
+                                alt="Unwell mood">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text h2 text-center">
+                                I want to go for a drive
+                            </p>
+
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="modal fade" id="phab-club" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="meal-title" aria-hidden="true">
+            <div class="modal-dialog " style="width: 100%">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+
+
+                        <div style="width: 100%; height: 30vh;">
+                            <img src="./assets/images/phab-club.jpg"
+                                style="object-fit: contain;width: 100%; height: 100%" class="card-img-top"
+                                alt="Unwell mood">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text h2 text-center">
+                                I want to go to Phab Club
+                            </p>
+
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="modal fade" id="wheelchair" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="meal-title" aria-hidden="true">
+            <div class="modal-dialog " style="width: 100%">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+
+
+                        <div style="width: 100%; height: 30vh;">
+                            <img src="./assets/images/wheelchair.jpg"
+                                style="object-fit: contain;width: 100%; height: 100%" class="card-img-top" alt="Go out">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text h2 text-center">
+                                I want to go out in my wheelchair
+                            </p>
+
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="modal fade" id="church" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="meal-title" aria-hidden="true">
+            <div class="modal-dialog " style="width: 100%">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+
+
+                        <div style="width: 100%; height: 30vh;">
+                            <img src="./assets/images/church.webp" style="object-fit: contain;width: 100%; height: 100%"
+                                class="card-img-top" alt="Unwell mood">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text h2 text-center">
+                                I want to go to Church
+                            </p>
+
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="modal fade" id="bed" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="meal-title" aria-hidden="true">
+            <div class="modal-dialog " style="width: 100%">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+
+
+                        <div style="width: 100%; height: 30vh;">
+                            <img src="./assets/images/bed.jpg" style="object-fit: contain;width: 100%; height: 100%"
+                                class="card-img-top" alt="Unwell mood">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text h2 text-center">
+                                I want to go to Bed
+                            </p>
+
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="modal fade" id="sweets" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="meal-title" aria-hidden="true">
+            <div class="modal-dialog " style="width: 100%">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+
+
+
+                        <div style="width: 100%; height: 30vh;">
+                            <img src="./assets/images/sweets.jpg" style="object-fit: contain;width: 100%; height: 100%"
+                                class="card-img-top" alt="Unwell mood">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text h2 text-center">
+                                I want some sweets
+                            </p>
+
+                        </div>
+
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="modal fade" id="chocolates" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="meal-title" aria-hidden="true">
+            <div class="modal-dialog " style="width: 100%">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+
+
+
+
+                        <div style="width: 100%; height: 30vh;">
+                            <img src="./assets/images/chocolates.jpg"
+                                style="object-fit: contain;width: 100%; height: 100%" class="card-img-top"
+                                alt="Unwell mood">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text h2 text-center">
+                                I want some chocolates
+                            </p>
+
+                        </div>
+
+
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="modal fade" id="pyjamas" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="meal-title" aria-hidden="true">
+            <div class="modal-dialog " style="width: 100%">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+
+
+
+
+
+                        <div style="width: 100%; height: 30vh;">
+                            <img src="./assets/images/pyjamas.jpg" style="object-fit: contain;width: 100%; height: 100%"
+                                class="card-img-top" alt="Unwell mood">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text h2 text-center">
+                                I want to change to my pyjamas
+                            </p>
+
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="modal fade" id="wet-bed" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="meal-title" aria-hidden="true">
+            <div class="modal-dialog " style="width: 100%">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+
+
+                        <div class="card shadow-sm">
+                            <div style="width: 100%; height: 30vh;">
+                                <img src="./assets/images/wet-bed.jpg" class="card-img-top"
+                                    style="object-fit: cover;width: 100%; height: 100%" alt="I wet my bed">
+                            </div>
+                            <div class="card-body">
+                                <p id="meal" class="card-text h2 text-center">
+                                    I wet my bed
+
+                                </p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="modal fade" id="bad-dream" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="meal-title" aria-hidden="true">
+            <div class="modal-dialog " style="width: 100%">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+
+
+                        <div class="card shadow-sm">
+                            <div style="width: 100%; height: 30vh;">
+                                <img src="./assets/images/bad-dream.jpg"
+                                    style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
+                                    alt="I had a bad dream">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text h2 text-center">
+                                    I had a bad dream
+                                </p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="modal fade" id="slipped" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="meal-title" aria-hidden="true">
+            <div class="modal-dialog " style="width: 100%">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+
+
+                        <div class="card shadow-sm">
+                            <div style="width: 100%; height: 30vh;">
+                                <img src="./assets/images/slipped.jpg"
+                                    style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
+                                    alt="I slipped while going to toilet">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text h2 text-center">
+                                    I slipped while going to toilet
+
+                                </p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="modal fade" id="hot-room" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="meal-title" aria-hidden="true">
+            <div class="modal-dialog " style="width: 100%">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+
+
+                        <div class="card shadow-sm">
+                            <div style="width: 100%; height: 30vh;">
+                                <img src="./assets/images/hot-room.jpg"
+                                    style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
+                                    alt="Because my room was too hot">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text h2 text-center">
+                                    Because my room was too hot
+                                </p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="modal fade" id="cold-room" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="meal-title" aria-hidden="true">
+            <div class="modal-dialog " style="width: 100%">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+
+
+                        <div class="card shadow-sm">
+                            <div style="width: 100%; height: 30vh;">
+                                <img src="./assets/images/cold-room.jpg"
+                                    style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
+                                    alt="My room was too cold">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text h2 text-center">
+                                    My room was too cold
+                                </p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="modal fade" id="feeling-unwell" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="meal-title" aria-hidden="true">
+            <div class="modal-dialog " style="width: 100%">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+
+
+                        <div class="card shadow-sm">
+                            <div style="width: 100%; height: 60vh;">
+                                <img src="./assets/images/feelin-unwell.jpg" class="card-img-top"
+                                    style="object-fit: cover;width: 100%; height: 100%"
+                                    alt="Just feeling unwell, no pain actually">
+                            </div>
+                            <div class="card-body">
+                                <p id="meal" class="card-text h2 text-center">
+                                    Just feeling unwell, no pain actually
+
+
+                                </p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="modal fade" id="feeling-pain" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="meal-title" aria-hidden="true">
+            <div class="modal-dialog " style="width: 100%">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+
+
+                        <div class="card shadow-sm">
+                            <div style="width: 100%; height: 60vh;">
+                                <img src="./assets/images/feeling-pain.jpg"
+                                    style="object-fit: contain;width: 100%; height: 100%" class="card-img-top"
+                                    alt="I had a bad dream">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text h2 text-center">
+                                    Feeling pain. Where?
+
+                                </p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="modal fade" id="sore-throat" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="meal-title" aria-hidden="true">
+            <div class="modal-dialog " style="width: 100%">
+                <div class="modal-content">
+        
+                    <div class="modal-body">
+        
+        
+                        <div class="card shadow-sm">
+                            <div style="width: 100%; height: 60vh;">
+                                <img src="./assets/images/sore-throat.jpg"
+                                    style="object-fit: contain;width: 100%; height: 100%" class="card-img-top"
+                                    alt="I had a bad dream">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text h2 text-center">
+                                I am having sore throat
+
+        
+                                </p>
+        
+                            </div>
+                        </div>
+        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+
+        <div class="modal fade" id="blocked-nose" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="meal-title" aria-hidden="true">
+            <div class="modal-dialog " style="width: 100%">
+                <div class="modal-content">
+        
+                    <div class="modal-body">
+        
+        
+                        <div class="card shadow-sm">
+                            <div style="width: 100%; height: 60vh;">
+                                <img src="./assets/images/blocked-nose.jpg" style="object-fit: contain;width: 100%; height: 100%"
+                                    class="card-img-top" alt="I had a bad dream">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text h2 text-center">
+                                    I am having blocked nose
+
+        
+        
+                                </p>
+        
+                            </div>
+                        </div>
+        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+    <footer class="container-fluid">
+        <div class="row  footer-bg align-items-center">
+            <p class="text-center mt-2">Lifeways Support (c) 2024. All rights reserved</p>
+        </div>
+    </footer>
+
+
+
+    <script src="./assets/js/jquery.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
