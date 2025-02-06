@@ -349,7 +349,7 @@ function getMeal() {
 
         if (isFriday()) {
             meal.innerHTML = '<p class="h1 text-center py-2">Friday Dinner</p>' +
-                '<div class="d-flex gap-2 justify-content-center  rounded-3 p-3 choice"' +
+                '<div class="d-flex flex-wrap gap-2 justify-content-center  rounded-3 p-3 choice"' +
                 'style="border: 2px solid orange; cursor: pointer;" data-bs-toggle="modal"' +
                 'data - bs - target="#dinner1" data - bs - dismiss="modal" >' +
 
@@ -370,7 +370,7 @@ function getMeal() {
                 '</div > '
         } else {
             meal.innerHTML = '<p class="h1 text-center py-2">Option 1</p>' +
-                ' <div class="d-flex gap-2 justify-content-center  rounded-3 p-3 choice"' +
+                ' <div class="d-flex flex-wrap gap-2 justify-content-center  rounded-3 p-3 choice"' +
                 'style="border: 2px solid orange; cursor: pointer;" data-bs-toggle="modal"' +
                 'data-bs-target="#dinner1" data-bs-dismiss="modal">' +
 
@@ -442,7 +442,7 @@ function getMeal() {
                 '</div>' +
                 '<div class="my-4" style="height: 10px; background-color: gray; width: 100%;"></div>' +
                 ' <p class="h1 text-center py-2 m-0">Option 2</p>' +
-                '<div class="d-flex gap-2 justify-content-center  rounded-3 p-3 choice"' +
+                '<div class="d-flex flex-wrap gap-2 justify-content-center  rounded-3 p-3 choice"' +
                 'style="border: 2px solid orange; cursor: pointer;" data-bs-toggle="modal"' +
                 'data-bs-target="#dinner2" data-bs-dismiss="modal">' +
 
@@ -653,7 +653,7 @@ function getMeal() {
 
                 '<div class="my-4" style="height: 10px; background-color: gray; width: 100%;"></div>' +
                 '<p class="h1 text-center py-2 m-0">Option 5</p>' +
-                '<div class="d-flex gap-2 justify-content-center  rounded-3 p-3 choice"' +
+                '<div class="d-flex flex-wrap gap-2 justify-content-center  rounded-3 p-3 choice"' +
                 'style="border: 2px solid orange; cursor: pointer;" data-bs-toggle="modal"' +
                 'data-bs-target="#dinner5" data-bs-dismiss="modal">' +
 
