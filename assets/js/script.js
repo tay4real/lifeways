@@ -514,7 +514,7 @@ function getMeal() {
                 '</div>' +
                 '<div class="my-4" style="height: 10px; background-color: gray; width: 100%;"></div>' +
                 ' <p class="h1 text-center py-2 m-0">Option 3</p>' +
-                '<div class="d-flex gap-2 justify-content-center  rounded-3 p-3 choice"' +
+                '<div class="d-flex flex-wrap gap-2 justify-content-center  rounded-3 p-3 choice"' +
                 'style="border: 2px solid orange; cursor: pointer;" data-bs-toggle="modal"' +
                 'data-bs-target="#dinner3" data-bs-dismiss="modal">' +
 
@@ -582,7 +582,7 @@ function getMeal() {
                 '</div>' +
                 '<div class="my-4" style="height: 10px; background-color: gray; width: 100%;"></div>' +
                 ' <p class="h1 text-center py-2 m-0">Option 4</p>' +
-                '<div class="d-flex gap-2 justify-content-center  rounded-3 p-3 choice"' +
+                '<div class="d-flex flex-wrap gap-2 justify-content-center  rounded-3 p-3 choice"' +
                 'style="border: 2px solid orange; cursor: pointer;" data-bs-toggle="modal"' +
                 'data-bs-target="#dinner4" data-bs-dismiss="modal">' +
 
