@@ -208,13 +208,141 @@ function getMeal() {
     } else if (currentTime < 18) {
         title.innerText = "What do you want for Lunch?"
 
-        meal.innerHTML = '<p class="h1 text-center py-2">Option 1</p><div class="d-flex gap-2 justify-content-center  rounded-3 p-3" style="border: 2px solid orange; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#lunch1" data-bs-dismiss="modal"><div class="card shadow-sm" style="width: 15em;"><div style="width: 100%; height: 30vh;"><img src="./assets/images/cup_tea.jpg" style="object-fit: cover;width: 100%; height: 100%" class="card-img-top" alt="Cup of Tea/ Coffee"></div><div class="card-body"><p class="card-text h4 text-center">Cup of Tea/ Coffee</p></div> </div><div style="width: 40px; height: 40px;"><img src="./assets/images/plus.png" style="object-fit: cover;width: 100%; height: 100%" class="card-img-top" alt="Unwell mood"></div><div class="card shadow-sm" style="width: 15em;"><div style="width: 100%; height: 30vh;"><img src="./assets/images/sandwich-ham.jpg" style="object-fit: cover;width: 100%; height: 100%" class="card-img-top" alt="Sandwich with ham and Butter"></div><div class="card-body"><p class="card-text h4 text-center">Sandwich with ham and Butter</p></div></div><div style="width: 40px; height: 40px;"><img src="./assets/images/plus.png" style="object-fit: cover;width: 100%; height: 100%" class="card-img-top" alt="Unwell mood"></div><div class="card shadow-sm" style="width: 15em;"><div style="width: 100%; height: 30vh;"><img src="./assets/images/raspberry.jpg" style="object-fit: cover;width: 100%; height: 100%" class="card-img-top" alt="Raspberry"></div><div class="card-body"><p class="card-text h4 text-center">Raspberry</p></div></div><div style="width: 40px; height: 40px;"><img src="./assets/images/plus.png" style="object-fit: cover;width: 100%; height: 100%" class="card-img-top" alt="Unwell mood"></div><div class="card shadow-sm" style="width: 15em;">' +
-
-            '<div style="width: 100%; height: 30vh;"><img src="./assets/images/yoghurt.jpg" style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"alt="Yoghurt"></div><div class="card-body"><p class="card-text h4 text-center">Yoghurt</p></div></div></div><div class="my-4" style="height: 10px; background-color: gray; width: 100%;"></div><p class="h1 text-center py-2 m-0">Option 2</p><div class="d-flex gap-2 justify-content-center  rounded-3 p-3" style="border: 2px solid orange; cursor: pointer;" data-bs-dismiss="modal"><div class="card shadow-sm" style="width: 15em;"><div style="width: 100%; height: 30vh;"><img src="./assets/images/cup_tea.jpg" style="object-fit: cover;width: 100%; height: 100%" class="card-img-top" alt="Cup of Tea/ Coffee"></div><div class="card-body"><p class="card-text h4 text-center">Cup of Tea/ Coffee</p></div></div><div style="width: 40px; height: 40px;"><img src="./assets/images/plus.png" style="object-fit: cover;width: 100%; height: 100%" class="card-img-top" alt="Unwell mood"></div><div class="card shadow-sm" style="width: 15em;"><div style="width: 100%; height: 30vh;"><img src="./assets/images/sandwish-omelet.jpg" style="object-fit: cover;width: 100%; height: 100%" class="card-img-top" alt="Sandwich with Omelette"></div><div class="card-body"><p class="card-text h4 text-center">Sandwich with Omelette</p></div></div><div style="width: 40px; height: 40px;"><img src="./assets/images/plus.png" style="object-fit: cover;width: 100%; height: 100%"class="card-img-top" alt="Unwell mood"></div><div class="card shadow-sm" style="width: 15em;"><div style="width: 100%; height: 30vh;"><img src="./assets/images/raspberry.jpg" style="object-fit: cover;width: 100%; height: 100%" class="card-img-top" alt="Raspberry"></div><div class="card-body"><p class="card-text h4 text-center">Raspberry</p></div></div><div style="width: 40px; height: 40px;"><img src="./assets/images/plus.png" style="object-fit: cover;width: 100%; height: 100%" class="card-img-top" alt="Unwell mood">' +
-
-            '</div><div class="card shadow-sm" style="width: 15em;"><div style="width: 100%; height: 30vh;"><img src="./assets/images/yoghurt.jpg" style="object-fit: cover;width: 100%; height: 100%" class="card-img-top" alt="Yoghurt"></div><div class="card-body"><p class="card-text h4 text-center">Yoghurt</p></div></div></div><div class="my-4" style="height: 10px; background-color: gray; width: 100%;"></div><p class="h1 text-center py-2">Option 3: I want to Have my Lunch Out</p><div class="d-flex gap-2 justify-content-center  rounded-3 p-3"><div class="card shadow-sm" style="border: 2px solid orange;width: 15em;cursor: pointer;" data-bs-toggle="modal" data-bs-target="#eatout1" data-bs-dismiss="modal"><div style="width: 100%; height: 30vh;"><img src="./assets/images/McDonald.png" style="object-fit: cover;width: 100%; height: 100%" class="card-img-top" alt="MCDONALD"></div><div class="card-body"><p class="card-text h4 text-center">MCDONALD</p></div></div><div class="card shadow-sm" style="border: 2px solid orange;width: 15em;cursor: pointer;" data-bs-toggle="modal" data-bs-target="#eatout2" data-bs-dismiss="modal"><div style="width: 100%; height: 30vh;"><img src="./assets/images/KFC.jpg" style="object-fit: cover;width: 100%; height: 100%" class="card-img-top" alt="KFC"></div><div class="card-body"><p class="card-text h4 text-center">KFC</p></div></div><div class="card shadow-sm" style="border: 2px solid orange;width: 15em;cursor: pointer;" data-bs-toggle="modal" data-bs-target="#eatout3" data-bs-dismiss="modal"><div style="width: 100%; height: 30vh;"><img src="./assets/images/asda-dartford.jpg" style="object-fit: cover;width: 100%; height: 100%" class="card-img-top" alt="ASDA DARTFORD"></div><div class="card-body"><p class="card-text h4 text-center">ASDA CAFE IN DARTFORD</p></div></div><div class="card shadow-sm" style="border: 2px solid orange;width: 15em;cursor: pointer;" data-bs-toggle="modal" data-bs-target="#eatout4" data-bs-dismiss="modal"><div style="width: 100%; height: 30vh;"><img src="./assets/images/Time-Plaice.jpg" style="object-fit: cover;width: 100%; height: 100%" class="card-img-top" alt="Time & Plaice"></div><div class="card-body"><p class="card-text h4 text-center">Time & Plaice</p></div></div>' +
-
-            '<div class="card shadow-sm" style="border: 2px solid orange;width: 15em;cursor: pointer;" data-bs-toggle="modal" data-bs-target="#eatout5" data-bs-dismiss="modal"><div style="width: 100%; height: 30vh;"><img src="./assets/images/coastacafe-dartford.jpg" style="object-fit: cover;width: 100%; height: 100%" class="card-img-top" alt="MCDONALD"></div><div class="card-body"><p class="card-text h4 text-center">COSTA CAFE DARTFORD</p></div></div>'
+        meal.innerHTML = '<p class="h1 text-center py-2">Option 1</p>' +
+        '<div class="d-flex flex-wrap gap-2 justify-content-center  rounded-3 p-3"' +
+        'style="border: 2px solid orange; cursor: pointer;" data-bs-toggle="modal"' + 'data-bs-target="#lunch1"' +
+        'data-bs-dismiss="modal">' +
+        '<div class="card shadow-sm" style="width: 15em;">' +
+            '<div style="width: 100%; height: 30vh;"><img src="./assets/images/cup_tea.jpg"' +
+                    'style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"' +  'alt="Cup of Tea/ Coffee">' +
+            '</div>' +
+            '<div class="card-body">' +
+                '<p class="card-text h4 text-center">Cup of Tea/ Coffee</p>' +
+            '</div>' +
+        '</div>' +
+        '<div style="width: 40px; height: 40px;"><img src="./assets/images/plus.png"' +
+                'style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"'  + 'alt="Unwell mood"></div>' +
+        '<div class="card shadow-sm" style="width: 15em;">' +
+            '<div style="width: 100%; height: 30vh;"><img src="./assets/images/sandwich-ham.jpg"' +
+                    'style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"' +
+                    'alt="Sandwich with ham and Butter"></div>' +
+            '<div class="card-body">' +
+                '<p class="card-text h4 text-center">Sandwich with ham and Butter</p>' +
+            '</div>' +
+       ' </div>' +
+        '<div style="width: 40px; height: 40px;"><img src="./assets/images/plus.png"' +
+                'style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"' + 'alt="Unwell mood"></div>' +
+        '<div class="card shadow-sm" style="width: 15em;">' +
+            '<div style="width: 100%; height: 30vh;"><img src="./assets/images/raspberry.jpg"' +
+                    'style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"' + 'alt="Raspberry"></div>' +
+            '<div class="card-body">' +
+                '<p class="card-text h4 text-center">Jam</p>' +
+            '</div>' +
+        '</div>' +
+        '<div style="width: 40px; height: 40px;"><img src="./assets/images/plus.png"' +
+                'style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"' + 'alt="Unwell mood"></div>' +
+        '<div class="card shadow-sm" style="width: 15em;">' +
+            '<div style="width: 100%; height: 30vh;"><img src="./assets/images/yoghurt.jpg"' +
+                    'style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"' + 'alt="Yoghurt"></div>' +
+            '<div class="card-body">' +
+                '<p class="card-text h4 text-center">Yoghurt</p>' +
+            '</div>' +
+        '</div>' +
+    '</div>' +
+    '<div class="my-4" style="height: 10px; background-color: gray; width: 100%;"></div>' +
+    '<p class="h1 text-center py-2 m-0">Option 2</p>' +
+    '<div class="d-flex flex-wrap gap-2 justify-content-center  rounded-3 p-3"' +
+        'style="border: 2px solid orange; cursor: pointer;" data-bs-dismiss="modal">' +
+        '<div class="card shadow-sm" style="width: 15em;">' +
+            '<div style="width: 100%; height: 30vh;"><img src="./assets/images/cup_tea.jpg"' +
+                    'style="object-fit: cover;width: 100%; height: 100%" class="card-img-top" alt="Cup of Tea/ Coffee">' +
+            '</div>' +
+           ' <div class="card-body">' +
+                '<p class="card-text h4 text-center">Cup of Tea/ Coffee</p>' +
+            '</div>' +
+       ' </div>' +
+        '<div style="width: 40px; height: 40px;"><img src="./assets/images/plus.png"' +
+                'style="object-fit: cover;width: 100%; height: 100%" class="card-img-top" alt="Unwell mood"></div>' +
+       ' <div class="card shadow-sm" style="width: 15em;">' +
+           ' <div style="width: 100%; height: 30vh;"><img src="./assets/images/sandwish-omelet.jpg"' +
+                    'style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"' +
+                    'alt="Sandwich with Omelette">' +
+            '</div>' +
+            '<div class="card-body">' +
+                '<p class="card-text h4 text-center">Sandwich with Omelette</p>' +
+            '</div>' +
+       ' </div>' +
+        '<div style="width: 40px; height: 40px;"><img src="./assets/images/plus.png"' +
+                'style="object-fit: cover;width: 100%; height: 100%" class="card-img-top" alt="Unwell mood"></div>' +
+       ' <div class="card shadow-sm" style="width: 15em;">' +
+            '<div style="width: 100%; height: 30vh;"><img src="./assets/images/raspberry.jpg"' +
+                   ' style="object-fit: cover;width: 100%; height: 100%" class="card-img-top" alt="Raspberry"></div>' +
+            '<div class="card-body">' +
+               ' <p class="card-text h4 text-center">Jam</p>' +
+            '</div>' +
+       ' </div>' +
+       ' <div style="width: 40px; height: 40px;"><img src="./assets/images/plus.png"' +
+                'style="object-fit: cover;width: 100%; height: 100%" class="card-img-top" alt="Unwell mood">'  +
+        '</div>' +
+        '<div class="card shadow-sm" style="width: 15em;">' +
+            '<div style="width: 100%; height: 30vh;"><img src="./assets/images/yoghurt.jpg"' +
+                   ' style="object-fit: cover;width: 100%; height: 100%" class="card-img-top" alt="Yoghurt"></div>' +
+            '<div class="card-body">' +
+                '<p class="card-text h4 text-center">Yoghurt</p>' +
+            '</div>' +
+        '</div>' +
+   ' </div>' +
+   ' <div class="my-4" style="height: 10px; background-color: gray; width: 100%;"></div>' +
+    '<p class="h1 text-center py-2">Option 3: I want to Have my Lunch Out</p>' +
+   ' <div class="d-flex flex-wrap gap-2 justify-content-center  rounded-3 p-3">' +
+       ' <div class="card shadow-sm" style="border: 2px solid orange;width: 15em;cursor: pointer;" data-bs-toggle="modal"' +
+            'data-bs-target="#eatout1" data-bs-dismiss="modal">' +
+            '<div style="width: 100%; height: 30vh;"><img src="./assets/images/McDonald.png"' +
+                    'style="object-fit: cover;width: 100%; height: 100%" class="card-img-top" alt="MCDONALD"></div>' +
+            '<div class="card-body">' +
+                '<p class="card-text h4 text-center">MCDONALD</p>' +
+            '</div>' +
+        '</div>' +
+        '<div class="card shadow-sm" style="border: 2px solid orange;width: 15em;cursor: pointer;" data-bs-toggle="modal"' +
+            'data-bs-target="#eatout2" data-bs-dismiss="modal">' +
+            '<div style="width: 100%; height: 30vh;"><img src="./assets/images/KFC.jpg"' +
+                    'style="object-fit: cover;width: 100%; height: 100%" class="card-img-top" alt="KFC"></div>' +
+            '<div class="card-body">' +
+                '<p class="card-text h4 text-center">KFC</p>' +
+            '</div>' +
+        '</div>' +
+        '<div class="card shadow-sm" style="border: 2px solid orange;width: 15em;cursor: pointer;" data-bs-toggle="modal"' +
+           ' data-bs-target="#eatout3" data-bs-dismiss="modal">' +
+            '<div style="width: 100%; height: 30vh;"><img src="./assets/images/asda-dartford.jpg"' +
+                    'style="object-fit: cover;width: 100%; height: 100%" class="card-img-top" alt="ASDA DARTFORD"></div>' +
+            '<div class="card-body">' +
+               ' <p class="card-text h4 text-center">ASDA CAFE IN DARTFORD</p>' +
+           ' </div>' +
+       ' </div>' +
+        '<div class="card shadow-sm" style="border: 2px solid orange;width: 15em;cursor: pointer;" data-bs-toggle="modal"' +
+            'data-bs-target="#eatout4" data-bs-dismiss="modal">' +
+            '<div style="width: 100%; height: 30vh;"><img src="./assets/images/Time-Plaice.jpg"' +
+                    'style="object-fit: cover;width: 100%; height: 100%" class="card-img-top" alt="Time & Plaice"></div>' +
+           ' <div class="card-body">' +
+                '<p class="card-text h4 text-center">Time & Plaice</p>' +
+            '</div>' +
+        '</div>' +
+        '<div class="card shadow-sm" style="border: 2px solid orange;width: 15em;cursor: pointer;" data-bs-toggle="modal"' +
+            'data-bs-target="#eatout5" data-bs-dismiss="modal">' +
+            '<div style="width: 100%; height: 30vh;"><img src="./assets/images/coastacafe-dartford.jpg"' +
+                    'style="object-fit: cover;width: 100%; height: 100%" class="card-img-top" alt="MCDONALD"></div>' +
+           ' <div class="card-body">' +
+                '<p class="card-text h4 text-center">COSTA COFFEE DARTFORD</p>' +
+           ' </div>' +
+       ' </div>' +
+        '<div class="card shadow-sm" style="border: 2px solid orange;width: 15em;cursor: pointer;" data-bs-toggle="modal"' +
+            'data-bs-target="#eatout5" data-bs-dismiss="modal">' +
+            '<div style="width: 100%; height: 30vh;"><img src="./assets/images/costacofee_longfield.jpg"' +
+                    'style="object-fit: cover;width: 100%; height: 100%" class="card-img-top" alt="MCDONALD"></div>' +
+            '<div class="card-body">' +
+                '<p class="card-text h4 text-center">COSTA COFFEE LONGFIELD</p>' +
+           ' </div>' +
+       ' </div>' 
         return "I want my Lunch";
     } else {
         title.innerText = "What do you want for Dinner?"
