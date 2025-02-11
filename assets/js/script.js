@@ -53,10 +53,12 @@ function isSunday() {
 function getMeal() {
     const currentTime = new Date().getHours();
     let title = document.getElementById("meal-title");
-    let meal = document.getElementById("meal-options")
+    let meal = document.getElementById("meal-options");
+    let eat = document.getElementById("eat");
     if (currentTime < 12) {
         title.innerText = "What do you want for Breakfast?"
-
+        eat.innerHTML = '<img src="./assets/images/breakfast.jpg" class="card-img-top"' +
+                                    'style="object-fit: cover;width: 100%; height: 100%" alt="Happy mood">'
 
         meal.innerHTML = '<p class="h1 text-center py-2">Option 1</p>' +
             '<div class="d-flex gap-2 justify-content-center  rounded-3 p-3 choice"' +
@@ -64,7 +66,7 @@ function getMeal() {
             ' data-bs-target="#breakfast1" data-bs-dismiss="modal">' +
 
             '<div class="card shadow-sm" style="width: 15em;">' +
-            '<div style="width: 100%; height: 30vh;">' +
+            '<div style="width: 100%; height: 40vh;">' +
             '<img src="./assets/images/cereal1.jpg"' +
             'style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"' +
             'alt="Cereal">' +
@@ -81,7 +83,7 @@ function getMeal() {
             'class="card-img-top" alt="Unwell mood">' +
             '</div>' +
             '<div class="card shadow-sm" style="width: 15em;">' +
-            '<div style="width: 100%; height: 30vh;">' +
+            '<div style="width: 100%; height: 40vh;">' +
             '<img src="./assets/images/sandwich-ham.jpg"' +
             'style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"' +
             'alt="Sandwich">' +
@@ -98,7 +100,7 @@ function getMeal() {
             'class="card-img-top" alt="Unwell mood">' +
             ' </div>' +
             '<div class="card shadow-sm" style="width: 15em;">' +
-            '<div style="width: 100%; height: 30vh;">' +
+            '<div style="width: 100%; height: 40vh;">' +
             '<img src="./assets/images/actimel.jpg"' +
             'style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"' +
             'alt="Actimel">' +
@@ -115,7 +117,7 @@ function getMeal() {
             'class="card-img-top" alt="Unwell mood">' +
             '</div>' +
             '<div class="card shadow-sm" style="width: 15em;">' +
-            '<div style="width: 100%; height: 30vh;">' +
+            '<div style="width: 100%; height: 40vh;">' +
             '<img src="./assets/images/medication.jpg"' +
             'style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"' +
             'alt="Medication">' +
@@ -138,7 +140,7 @@ function getMeal() {
             'data-bs-target="#breakfast2" data-bs-dismiss="modal">' +
 
             '<div class="card shadow-sm" style="width: 15em;">' +
-            '<div style="width: 100%; height: 30vh;">' +
+            '<div style="width: 100%; height: 40vh;">' +
             '<img src="./assets/images/cereal2.jpg"' +
             'style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"' +
             ' alt="Cereal">' +
@@ -155,7 +157,7 @@ function getMeal() {
             'class="card-img-top" alt="Unwell mood">' +
             '</div>' +
             '<div class="card shadow-sm" style="width: 15em;">' +
-            '<div style="width: 100%; height: 30vh;">' +
+            '<div style="width: 100%; height: 40vh;">' +
             '<img src="./assets/images/sandwich-ham.jpg"' +
             'style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"' +
             'alt="Sandwich">' +
@@ -172,7 +174,7 @@ function getMeal() {
             'class="card-img-top" alt="Unwell mood">' +
             '</div>' +
             '<div class="card shadow-sm" style="width: 15em;">' +
-            '<div style="width: 100%; height: 30vh;">' +
+            '<div style="width: 100%; height: 40vh;">' +
             '<img src="./assets/images/actimel.jpg"' +
             'style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"' +
             '  alt="Actimel">' +
@@ -189,7 +191,7 @@ function getMeal() {
             'class="card-img-top" alt="Unwell mood">' +
             ' </div>' +
             ' <div class="card shadow-sm" style="width: 15em;">' +
-            '<div style="width: 100%; height: 30vh;">' +
+            '<div style="width: 100%; height: 40vh;">' +
             '<img src="./assets/images/medication.jpg"' +
             ' style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"' +
             'alt="Medication">' +
@@ -208,12 +210,15 @@ function getMeal() {
     } else if (currentTime < 18) {
         title.innerText = "What do you want for Lunch?"
 
+        eat.innerHTML = '<img src="./assets/images/breakfast.jpg" class="card-img-top"' +
+                                    'style="object-fit: cover;width: 100%; height: 100%" alt="Happy mood">'
+
         meal.innerHTML = '<p class="h1 text-center py-2">Option 1</p>' +
         '<div class="d-flex flex-wrap gap-2 justify-content-center  rounded-3 p-3"' +
         'style="border: 2px solid orange; cursor: pointer;" data-bs-toggle="modal"' + 'data-bs-target="#lunch1"' +
         'data-bs-dismiss="modal">' +
         '<div class="card shadow-sm" style="width: 15em;">' +
-            '<div style="width: 100%; height: 30vh;"><img src="./assets/images/cup_tea.jpg"' +
+            '<div style="width: 100%; height: 40vh;"><img src="./assets/images/cup_tea.jpg"' +
                     'style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"' +  'alt="Cup of Tea/ Coffee">' +
             '</div>' +
             '<div class="card-body">' +
@@ -223,7 +228,7 @@ function getMeal() {
         '<div style="width: 40px; height: 40px;"><img src="./assets/images/plus.png"' +
                 'style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"'  + 'alt="Unwell mood"></div>' +
         '<div class="card shadow-sm" style="width: 15em;">' +
-            '<div style="width: 100%; height: 30vh;"><img src="./assets/images/sandwich-ham.jpg"' +
+            '<div style="width: 100%; height: 40vh;"><img src="./assets/images/sandwich-ham.jpg"' +
                     'style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"' +
                     'alt="Sandwich with ham and Butter"></div>' +
             '<div class="card-body">' +
@@ -233,7 +238,7 @@ function getMeal() {
         '<div style="width: 40px; height: 40px;"><img src="./assets/images/plus.png"' +
                 'style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"' + 'alt="Unwell mood"></div>' +
         '<div class="card shadow-sm" style="width: 15em;">' +
-            '<div style="width: 100%; height: 30vh;"><img src="./assets/images/raspberry.jpg"' +
+            '<div style="width: 100%; height: 40vh;"><img src="./assets/images/raspberry.jpg"' +
                     'style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"' + 'alt="Raspberry"></div>' +
             '<div class="card-body">' +
                 '<p class="card-text h4 text-center">Jam</p>' +
@@ -242,7 +247,7 @@ function getMeal() {
         '<div style="width: 40px; height: 40px;"><img src="./assets/images/plus.png"' +
                 'style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"' + 'alt="Unwell mood"></div>' +
         '<div class="card shadow-sm" style="width: 15em;">' +
-            '<div style="width: 100%; height: 30vh;"><img src="./assets/images/yoghurt.jpg"' +
+            '<div style="width: 100%; height: 40vh;"><img src="./assets/images/yoghurt.jpg"' +
                     'style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"' + 'alt="Yoghurt"></div>' +
             '<div class="card-body">' +
                 '<p class="card-text h4 text-center">Yoghurt</p>' +
@@ -254,7 +259,7 @@ function getMeal() {
     '<div class="d-flex flex-wrap gap-2 justify-content-center  rounded-3 p-3"' +
         'style="border: 2px solid orange; cursor: pointer;" data-bs-dismiss="modal">' +
         '<div class="card shadow-sm" style="width: 15em;">' +
-            '<div style="width: 100%; height: 30vh;"><img src="./assets/images/cup_tea.jpg"' +
+            '<div style="width: 100%; height: 40vh;"><img src="./assets/images/cup_tea.jpg"' +
                     'style="object-fit: cover;width: 100%; height: 100%" class="card-img-top" alt="Cup of Tea/ Coffee">' +
             '</div>' +
            ' <div class="card-body">' +
@@ -264,7 +269,7 @@ function getMeal() {
         '<div style="width: 40px; height: 40px;"><img src="./assets/images/plus.png"' +
                 'style="object-fit: cover;width: 100%; height: 100%" class="card-img-top" alt="Unwell mood"></div>' +
        ' <div class="card shadow-sm" style="width: 15em;">' +
-           ' <div style="width: 100%; height: 30vh;"><img src="./assets/images/sandwish-omelet.jpg"' +
+           ' <div style="width: 100%; height: 40vh;"><img src="./assets/images/sandwish-omelet.jpg"' +
                     'style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"' +
                     'alt="Sandwich with Omelette">' +
             '</div>' +
@@ -275,7 +280,7 @@ function getMeal() {
         '<div style="width: 40px; height: 40px;"><img src="./assets/images/plus.png"' +
                 'style="object-fit: cover;width: 100%; height: 100%" class="card-img-top" alt="Unwell mood"></div>' +
        ' <div class="card shadow-sm" style="width: 15em;">' +
-            '<div style="width: 100%; height: 30vh;"><img src="./assets/images/raspberry.jpg"' +
+            '<div style="width: 100%; height: 40vh;"><img src="./assets/images/raspberry.jpg"' +
                    ' style="object-fit: cover;width: 100%; height: 100%" class="card-img-top" alt="Raspberry"></div>' +
             '<div class="card-body">' +
                ' <p class="card-text h4 text-center">Jam</p>' +
@@ -285,7 +290,7 @@ function getMeal() {
                 'style="object-fit: cover;width: 100%; height: 100%" class="card-img-top" alt="Unwell mood">'  +
         '</div>' +
         '<div class="card shadow-sm" style="width: 15em;">' +
-            '<div style="width: 100%; height: 30vh;"><img src="./assets/images/yoghurt.jpg"' +
+            '<div style="width: 100%; height: 40vh;"><img src="./assets/images/yoghurt.jpg"' +
                    ' style="object-fit: cover;width: 100%; height: 100%" class="card-img-top" alt="Yoghurt"></div>' +
             '<div class="card-body">' +
                 '<p class="card-text h4 text-center">Yoghurt</p>' +
@@ -297,7 +302,7 @@ function getMeal() {
    ' <div class="d-flex flex-wrap gap-2 justify-content-center  rounded-3 p-3">' +
        ' <div class="card shadow-sm" style="border: 2px solid orange;width: 15em;cursor: pointer;" data-bs-toggle="modal"' +
             'data-bs-target="#eatout1" data-bs-dismiss="modal">' +
-            '<div style="width: 100%; height: 30vh;"><img src="./assets/images/McDonald.png"' +
+            '<div style="width: 100%; height: 40vh;"><img src="./assets/images/McDonald.png"' +
                     'style="object-fit: cover;width: 100%; height: 100%" class="card-img-top" alt="MCDONALD"></div>' +
             '<div class="card-body">' +
                 '<p class="card-text h4 text-center">MCDONALD</p>' +
@@ -305,7 +310,7 @@ function getMeal() {
         '</div>' +
         '<div class="card shadow-sm" style="border: 2px solid orange;width: 15em;cursor: pointer;" data-bs-toggle="modal"' +
             'data-bs-target="#eatout2" data-bs-dismiss="modal">' +
-            '<div style="width: 100%; height: 30vh;"><img src="./assets/images/KFC.jpg"' +
+            '<div style="width: 100%; height: 40vh;"><img src="./assets/images/KFC.jpg"' +
                     'style="object-fit: cover;width: 100%; height: 100%" class="card-img-top" alt="KFC"></div>' +
             '<div class="card-body">' +
                 '<p class="card-text h4 text-center">KFC</p>' +
@@ -313,7 +318,7 @@ function getMeal() {
         '</div>' +
         '<div class="card shadow-sm" style="border: 2px solid orange;width: 15em;cursor: pointer;" data-bs-toggle="modal"' +
            ' data-bs-target="#eatout3" data-bs-dismiss="modal">' +
-            '<div style="width: 100%; height: 30vh;"><img src="./assets/images/asda-dartford.jpg"' +
+            '<div style="width: 100%; height: 40vh;"><img src="./assets/images/asda-dartford.jpg"' +
                     'style="object-fit: cover;width: 100%; height: 100%" class="card-img-top" alt="ASDA DARTFORD"></div>' +
             '<div class="card-body">' +
                ' <p class="card-text h4 text-center">ASDA CAFE IN DARTFORD</p>' +
@@ -321,7 +326,7 @@ function getMeal() {
        ' </div>' +
         '<div class="card shadow-sm" style="border: 2px solid orange;width: 15em;cursor: pointer;" data-bs-toggle="modal"' +
             'data-bs-target="#eatout4" data-bs-dismiss="modal">' +
-            '<div style="width: 100%; height: 30vh;"><img src="./assets/images/Time-Plaice.jpg"' +
+            '<div style="width: 100%; height: 40vh;"><img src="./assets/images/Time-Plaice.jpg"' +
                     'style="object-fit: cover;width: 100%; height: 100%" class="card-img-top" alt="Time & Plaice"></div>' +
            ' <div class="card-body">' +
                 '<p class="card-text h4 text-center">Time & Plaice</p>' +
@@ -329,7 +334,7 @@ function getMeal() {
         '</div>' +
         '<div class="card shadow-sm" style="border: 2px solid orange;width: 15em;cursor: pointer;" data-bs-toggle="modal"' +
             'data-bs-target="#eatout5" data-bs-dismiss="modal">' +
-            '<div style="width: 100%; height: 30vh;"><img src="./assets/images/coastacafe-dartford.jpg"' +
+            '<div style="width: 100%; height: 40vh;"><img src="./assets/images/coastacafe-dartford.jpg"' +
                     'style="object-fit: cover;width: 100%; height: 100%" class="card-img-top" alt="MCDONALD"></div>' +
            ' <div class="card-body">' +
                 '<p class="card-text h4 text-center">COSTA COFFEE DARTFORD</p>' +
@@ -337,7 +342,7 @@ function getMeal() {
        ' </div>' +
         '<div class="card shadow-sm" style="border: 2px solid orange;width: 15em;cursor: pointer;" data-bs-toggle="modal"' +
             'data-bs-target="#eatout5" data-bs-dismiss="modal">' +
-            '<div style="width: 100%; height: 30vh;"><img src="./assets/images/costacofee_longfield.jpg"' +
+            '<div style="width: 100%; height: 40vh;"><img src="./assets/images/costacofee_longfield.jpg"' +
                     'style="object-fit: cover;width: 100%; height: 100%" class="card-img-top" alt="MCDONALD"></div>' +
             '<div class="card-body">' +
                 '<p class="card-text h4 text-center">COSTA COFFEE LONGFIELD</p>' +
@@ -347,6 +352,9 @@ function getMeal() {
     } else {
         title.innerText = "What do you want for Dinner?"
 
+        eat.innerHTML = '<img src="./assets/images/dinner.jpg" class="card-img-top"' +
+                                    'style="object-fit: cover;width: 100%; height: 100%" alt="Happy mood">'
+
         if (isFriday()) {
             meal.innerHTML = '<p class="h1 text-center py-2">Friday Dinner</p>' +
                 '<div class="d-flex flex-wrap gap-2 justify-content-center  rounded-3 p-3 choice"' +
@@ -354,7 +362,7 @@ function getMeal() {
                 'data - bs - target="#dinner1" data - bs - dismiss="modal" >' +
 
                 '<div class="card shadow-sm" style="width: 15em;">' +
-                '<div style="width: 100%; height: 30vh;">' +
+                '<div style="width: 100%; height: 40vh;">' +
                 '<img src="./assets/images/fish-chips.jpg"' +
                 'style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"' +
                 'alt="Mashed Potatoes">' +
@@ -375,7 +383,7 @@ function getMeal() {
                 'data-bs-target="#dinner1" data-bs-dismiss="modal">' +
 
                 '<div class="card shadow-sm" style="width: 15em;">' +
-                '<div style="width: 100%; height: 30vh;">' +
+                '<div style="width: 100%; height: 40vh;">' +
                 '<img src="./assets/images/mashed-potatoes.jpg"' +
                 'style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"' +
                 'alt="Mashed Potatoes">' +
@@ -392,7 +400,7 @@ function getMeal() {
                 'class="card-img-top" alt="Unwell mood">' +
                 '</div>' +
                 '<div class="card shadow-sm" style="width: 15em;">' +
-                '<div style="width: 100%; height: 30vh;">' +
+                '<div style="width: 100%; height: 40vh;">' +
                 '<img src="./assets/images/sauce.jpg"' +
                 'style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"' +
                 'alt="Sandwich">' +
@@ -409,7 +417,7 @@ function getMeal() {
                 'class="card-img-top" alt="Unwell mood">' +
                 '</div>' +
                 '<div class="card shadow-sm" style="width: 15em;">' +
-                '<div style="width: 100%; height: 30vh;">' +
+                '<div style="width: 100%; height: 40vh;">' +
                 '<img src="./assets/images/vegetables.webp"' +
                 'style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"' +
                 'alt="Vegetable">' +
@@ -426,7 +434,7 @@ function getMeal() {
                 'class="card-img-top" alt="Unwell mood">' +
                 '</div>' +
                 '<div class="card shadow-sm" style="width: 15em;">' +
-                '<div style="width: 100%; height: 30vh;">' +
+                '<div style="width: 100%; height: 40vh;">' +
                 '<img src="./assets/images/cup_tea.jpg"' +
                 'style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"' +
                 'alt="Medication">' +
@@ -447,7 +455,7 @@ function getMeal() {
                 'data-bs-target="#dinner2" data-bs-dismiss="modal">' +
 
                 '<div class="card shadow-sm" style="width: 15em;">' +
-                '<div style="width: 100%; height: 30vh;">' +
+                '<div style="width: 100%; height: 40vh;">' +
                 '<img src="./assets/images/rice.jpg"' +
                 'style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"' +
                 'alt="Rice">' +
@@ -464,7 +472,7 @@ function getMeal() {
                 'class="card-img-top" alt="Unwell mood">' +
                 '</div>' +
                 '<div class="card shadow-sm" style="width: 15em;">' +
-                '<div style="width: 100%; height: 30vh;">' +
+                '<div style="width: 100%; height: 40vh;">' +
                 '<img src="./assets/images/sauce.jpg"' +
                 'style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"' +
                 'alt="Sandwich">' +
@@ -481,7 +489,7 @@ function getMeal() {
                 'class="card-img-top" alt="Unwell mood">' +
                 '</div>' +
                 '<div class="card shadow-sm" style="width: 15em;">' +
-                '<div style="width: 100%; height: 30vh;">' +
+                '<div style="width: 100%; height: 40vh;">' +
                 '<img src="./assets/images/vegetables.webp"' +
                 'style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"' +
                 'alt="Vegetable">' +
@@ -498,7 +506,7 @@ function getMeal() {
                 'class="card-img-top" alt="Unwell mood">' +
                 '</div>' +
                 '<div class="card shadow-sm" style="width: 15em;">' +
-                '<div style="width: 100%; height: 30vh;">' +
+                '<div style="width: 100%; height: 40vh;">' +
                 '<img src="./assets/images/cup_tea.jpg"' +
                 'style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"' +
                 'alt="Medication">' +
@@ -519,7 +527,7 @@ function getMeal() {
                 'data-bs-target="#dinner3" data-bs-dismiss="modal">' +
 
                     '<div class="card shadow-sm" style="width: 15em;">' +
-                        '<div style="width: 100%; height: 30vh;">' +
+                        '<div style="width: 100%; height: 40vh;">' +
                             '<img src="./assets/images/Spaghetti.jpg"' +
                                 'style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"' +
                                     'alt="Spaghetti">' +
@@ -535,7 +543,7 @@ function getMeal() {
                             'class="card-img-top" alt="Unwell mood">' +
                     '</div>' +
                     '<div class="card shadow-sm" style="width: 15em;">' +
-                        '<div style="width: 100%; height: 30vh;">' +
+                        '<div style="width: 100%; height: 40vh;">' +
                             '<img src="./assets/images/sauce.jpg"' +
                                 'style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"' +
                                     'alt="Sandwich">' +
@@ -551,7 +559,7 @@ function getMeal() {
                             'class="card-img-top" alt="Unwell mood">' +
                     '</div>' +
                     '<div class="card shadow-sm" style="width: 15em;">' +
-                        '<div style="width: 100%; height: 30vh;">' +
+                        '<div style="width: 100%; height: 40vh;">' +
                             '<img src="./assets/images/vegetables.webp"' +
                                 'style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"' +
                                     'alt="Vegetable">' +
@@ -567,7 +575,7 @@ function getMeal() {
                             'class="card-img-top" alt="Unwell mood">' +
                     '</div>' +
                     '<div class="card shadow-sm" style="width: 15em;">' +
-                        '<div style="width: 100%; height: 30vh;">' +
+                        '<div style="width: 100%; height: 40vh;">' +
                             '<img src="./assets/images/cup_tea.jpg"' +
                                 'style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"' +
                                     ' alt="Medication">' +
@@ -587,7 +595,7 @@ function getMeal() {
                 'data-bs-target="#dinner4" data-bs-dismiss="modal">' +
 
                     '<div class="card shadow-sm" style="width: 15em;">' +
-                        '<div style="width: 100%; height: 30vh;">' +
+                        '<div style="width: 100%; height: 40vh;">' +
                             '<img src="./assets/images/pasta.jpg"' +
                                 'style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"' +
                                     'alt="Pasta">' +
@@ -603,7 +611,7 @@ function getMeal() {
                             'class="card-img-top" alt="Unwell mood">' +
                     '</div>' +
                     '<div class="card shadow-sm" style="width: 15em;">' +
-                        '<div style="width: 100%; height: 30vh;">' +
+                        '<div style="width: 100%; height: 40vh;">' +
                             '<img src="./assets/images/sauce.jpg"' +
                                 'style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"' +
                                     'alt="Sauce">' +
@@ -619,7 +627,7 @@ function getMeal() {
                             'class="card-img-top" alt="Unwell mood">' +
                     '</div>' +
                     '<div class="card shadow-sm" style="width: 15em;">' +
-                        '<div style="width: 100%; height: 30vh;">' +
+                        '<div style="width: 100%; height: 40vh;">' +
                             '<img src="./assets/images/vegetables.webp"' +
                                 'style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"' +
                                     'alt="Vegetable">' +
@@ -635,7 +643,7 @@ function getMeal() {
                             'class="card-img-top" alt="Unwell mood">' +
                     '</div>' +
                     '<div class="card shadow-sm" style="width: 15em;">' +
-                        '<div style="width: 100%; height: 30vh;">' +
+                        '<div style="width: 100%; height: 40vh;">' +
                             '<img src="./assets/images/cup_tea.jpg"' +
                                 'style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"' +
                                     ' alt="Medication">' +
@@ -658,7 +666,7 @@ function getMeal() {
                 'data-bs-target="#dinner5" data-bs-dismiss="modal">' +
 
                     '<div class="card shadow-sm" style="width: 15em;">' +
-                        '<div style="width: 100%; height: 30vh;">' +
+                        '<div style="width: 100%; height: 40vh;">' +
                             '<img src="./assets/images/cheese-onionpie.jpg"' +
                                 'style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"' +
                                     'alt="Cheese and onion pie with corned beef and baked beans">' +
