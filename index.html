@@ -16,24 +16,28 @@
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary py-2">
         <div class="container-fluid  justify-content-center">
-            <a class="navbar-brand" href="#"><img src="./assets/images/logo.svg" alt="Lifeways logo" /></a>
+            <a class="navbar-brand" href="#"><img src="./assets/images/logo.svg" alt="Lifeways logo" height="50" /></a>
         </div>
     </nav>
 
-    <main style="min-height: 80vh;">
-        <section class="mt-5">
+    <main style="min-height: 70vh; margin: 0; padding: 0;">
+        <section class="mt-3">
             <h1 class="text-center">Welcome to Lifeways Groups Pictorial Support Plan</h1>
         </section>
 
-        <div id="welcome-page" class="container my-5">
-            <div class="py-4 text-center bg-body-tertiary rounded-3">
-                <img src="./assets/images/care-giver.jpg" class="rounded-3 img-fluid" alt="Elderly Care Support">
-                <h1 id="display-date" class="text-body-emphasis mt-5"></h1>
-
-                <div class="d-flex justify-content-end align-items-center mt-4">
+        <div id="welcome-page" class=" mt-2" style="width: 100%; height: 70vh; position: relative;">
+            <img id="slide1" src="./assets/images/care-giver.jpg" style="width: 100%; height: 100%; object-fit: cover;"
+                class="img-fluid hide" alt="Elderly Care Support" />
+            <img id="slide2" src="./assets/images/slide2.jpg" style="width: 100%; height: 100%; object-fit: cover;"
+                class="img-fluid " alt="Elderly Care Support" />
+            <div class="text-center ">
+                <h1 id="display-date" class="text-body-emphasis"
+                    style="position: absolute; top: 40px; background-color: rgba(255,255,255, 0.3);"></h1>
+                <div class="d-flex justify-content-end align-items-center mt-4"
+                    style="position: absolute; bottom: 30px; right: 20px; left: 20px;">
                     <button id="nextSlide" class="d-inline-flex align-items-center  btn  btn-lg px-4 rounded-3"
-                        type="button" style="background-color: #003962; color:white">
-                        <p class="h2 m-2">Next</p> ==>
+                        type="button" style="background-color: #009EE2; color:white">
+                        <p class="h2">Next</p> 
                     </button>
                 </div>
             </div>
@@ -55,7 +59,7 @@
                         <div class="card shadow-sm">
                             <div style="width: 100%; height: 30vh;">
                                 <img src="./assets/images/happy.jpg" class="card-img-top"
-                                    style="object-fit: contain;width: 100%; height: 100%" alt="Happy mood">
+                                    style="object-fit: cover;width: 100%; height: 100%" alt="Happy mood">
                             </div>
                             <div class="card-body">
                                 <p class="card-text h2 text-center">
@@ -69,7 +73,7 @@
                         <div class="card shadow-sm">
                             <div style="width: 100%; height: 30vh;">
                                 <img src="./assets/images/excited.jpg" class="card-img-top"
-                                    style="object-fit: contain;width: 100%; height: 100%" alt="Excited mood">
+                                    style="object-fit: cover;width: 100%; height: 100%" alt="Excited mood">
                             </div>
                             <div class="card-body">
                                 <p class="card-text h2 text-center">
@@ -83,7 +87,7 @@
                         <div class="card shadow-sm">
                             <div style="width: 100%; height: 30vh;">
                                 <img src="./assets/images/sad.jpg" class="card-img-top"
-                                    style="object-fit: contain;width: 100%; height: 100%" alt="Sad mood">
+                                    style="object-fit: cover;width: 100%; height: 100%" alt="Sad mood">
                             </div>
                             <div class="card-body">
                                 <p class="card-text h2 text-center">
@@ -98,7 +102,7 @@
                         <div class="card shadow-sm">
                             <div style="width: 100%; height: 30vh;">
                                 <img src="./assets/images/unwell.jpg"
-                                    style="object-fit: contain;width: 100%; height: 100%" class="card-img-top"
+                                    style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
                                     alt="Unwell mood">
                             </div>
                             <div class="card-body">
@@ -117,7 +121,7 @@
                     <button id="firstSlide"
                         class="d-inline-flex align-items-center  btn  btn-lg px-4 rounded-3 bg-secondary text-white"
                         type="button">
-                        <== <p class="h2 m-2">Back</p>
+                        <p class="h2 m-2">Back</p>
                     </button>
                 </div>
             </div>
@@ -138,7 +142,7 @@
                         <div class="card shadow-sm">
                             <div style="width: 100%; height: 30vh;">
                                 <img src="./assets/images/eat.webp" class="card-img-top"
-                                    style="object-fit: contain;width: 100%; height: 100%" alt="Happy mood">
+                                    style="object-fit: cover;width: 100%; height: 100%" alt="Happy mood">
                             </div>
                             <div class="card-body">
                                 <p id="meal" class="card-text h2 text-center">
@@ -156,7 +160,7 @@
                         <div class="card shadow-sm">
                             <div style="width: 100%; height: 30vh;">
                                 <img src="./assets/images/cup_tea.jpg"
-                                    style="object-fit: contain;width: 100%; height: 100%" class="card-img-top"
+                                    style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
                                     alt="I want a cup of tea">
                             </div>
                             <div class="card-body">
@@ -173,7 +177,7 @@
                         <div class="card shadow-sm">
                             <div style="width: 100%; height: 30vh;">
                                 <img src="./assets/images/cookies.jpg"
-                                    style="object-fit: contain;width: 100%; height: 100%" class="card-img-top"
+                                    style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
                                     alt="I want some biscuits">
                             </div>
                             <div class="card-body">
@@ -189,7 +193,7 @@
                         <div class="card shadow-sm">
                             <div style="width: 100%; height: 30vh;">
                                 <img src="./assets/images/toasted-bread.jpeg"
-                                    style="object-fit: contain;width: 100%; height: 100%" class="card-img-top"
+                                    style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
                                     alt="Unwell mood">
                             </div>
                             <div class="card-body">
@@ -205,7 +209,7 @@
                         <div class="card shadow-sm">
                             <div style="width: 100%; height: 30vh;">
                                 <img src="./assets/images/squash.jpg"
-                                    style="object-fit: contain;width: 100%; height: 100%" class="card-img-top"
+                                    style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
                                     alt="Unwell mood">
                             </div>
                             <div class="card-body">
@@ -221,7 +225,7 @@
                         <div class="card shadow-sm">
                             <div style="width: 100%; height: 30vh;">
                                 <img src="./assets/images/tomato_ketchup.jpg"
-                                    style="object-fit: contain;width: 100%; height: 100%" class="card-img-top"
+                                    style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
                                     alt="Unwell mood">
                             </div>
                             <div class="card-body">
@@ -239,12 +243,12 @@
                     <button id="backSlide1"
                         class="d-inline-flex align-items-center  btn  btn-lg px-4 rounded-3 bg-secondary text-white"
                         type="button">
-                        <== <p class="h2 m-2">Back</p>
+                        <p class="h2 m-2">Back</p>
                     </button>
 
                     <button id="nextSlide1" class="d-inline-flex align-items-center  btn  btn-lg px-4 rounded-3"
-                        type="button" style="background-color: #003962; color:white">
-                        <p class="h2 m-2">Next</p> ==>
+                        type="button" style="background-color: #009EE2; color:white">
+                        <p class="h2 m-2">Next</p> 
                     </button>
                 </div>
             </div>
@@ -260,7 +264,7 @@
                         <div class="card shadow-sm">
                             <div style="width: 100%; height: 30vh;">
                                 <img src="./assets/images/raspberry.jpg"
-                                    style="object-fit: contain;width: 100%; height: 100%" class="card-img-top"
+                                    style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
                                     alt="Unwell mood">
                             </div>
                             <div class="card-body">
@@ -276,7 +280,7 @@
                         <div class="card shadow-sm">
                             <div style="width: 100%; height: 30vh;">
                                 <img src="./assets/images/man-showering.jpg" class="card-img-top"
-                                    style="object-fit: contain;width: 100%; height: 100%" alt="Excited mood">
+                                    style="object-fit: cover;width: 100%; height: 100%" alt="Excited mood">
                             </div>
                             <div class="card-body">
                                 <p class="card-text h2 text-center">
@@ -291,7 +295,7 @@
                         <div class="card shadow-sm">
                             <div style="width: 100%; height: 30vh;">
                                 <img src="./assets/images/swichon-tv.jpg" class="card-img-top"
-                                    style="object-fit: contain;width: 100%; height: 100%" alt="Excited mood">
+                                    style="object-fit: cover;width: 100%; height: 100%" alt="Excited mood">
                             </div>
                             <div class="card-body">
                                 <p class="card-text h2 text-center">
@@ -306,7 +310,7 @@
                         <div class="card shadow-sm">
                             <div style="width: 100%; height: 30vh;">
                                 <img src="./assets/images/all-directions.jpg" class="card-img-top"
-                                    style="object-fit: contain;width: 100%; height: 100%" alt="Sad mood">
+                                    style="object-fit: cover;width: 100%; height: 100%" alt="Sad mood">
                             </div>
                             <div class="card-body">
                                 <p class="card-text h2 text-center">
@@ -321,7 +325,7 @@
                         <div class="card shadow-sm">
                             <div style="width: 100%; height: 30vh;">
                                 <img src="./assets/images/writings.jpg"
-                                    style="object-fit: contain;width: 100%; height: 100%" class="card-img-top"
+                                    style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
                                     alt="Unwell mood">
                             </div>
                             <div class="card-body">
@@ -339,7 +343,7 @@
                         <div class="card shadow-sm">
                             <div style="width: 100%; height: 30vh;">
                                 <img src="./assets/images/drive.jpg"
-                                    style="object-fit: contain;width: 100%; height: 100%" class="card-img-top"
+                                    style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
                                     alt="Unwell mood">
                             </div>
                             <div class="card-body">
@@ -357,12 +361,12 @@
                     <button id="backSlide2"
                         class="d-inline-flex align-items-center  btn  btn-lg px-4 rounded-3 bg-secondary text-white"
                         type="button">
-                        <== <p class="h2 m-2">Back</p>
+                        <p class="h2 m-2">Back</p>
                     </button>
 
                     <button id="nextSlide2" class="d-inline-flex align-items-center  btn  btn-lg px-4 rounded-3"
-                        type="button" style="background-color: #003962; color:white">
-                        <p class="h2 m-2">Next</p> ==>
+                        type="button" style="background-color: #009EE2; color:white">
+                        <p class="h2 m-2">Next</p> 
                     </button>
                 </div>
             </div>
@@ -378,7 +382,7 @@
                         <div class="card shadow-sm">
                             <div style="width: 100%; height: 30vh;">
                                 <img src="./assets/images/wheelchair.jpg"
-                                    style="object-fit: contain;width: 100%; height: 100%" class="card-img-top"
+                                    style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
                                     alt="Go out">
                             </div>
                             <div class="card-body">
@@ -395,7 +399,7 @@
                         <div class="card shadow-sm">
                             <div style="width: 100%; height: 30vh;">
                                 <img src="./assets/images/church.webp"
-                                    style="object-fit: contain;width: 100%; height: 100%" class="card-img-top"
+                                    style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
                                     alt="Unwell mood">
                             </div>
                             <div class="card-body">
@@ -410,7 +414,7 @@
                     <div class="col" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#bed">
                         <div class="card shadow-sm">
                             <div style="width: 100%; height: 30vh;">
-                                <img src="./assets/images/bed.jpg" style="object-fit: contain;width: 100%; height: 100%"
+                                <img src="./assets/images/bed.jpg" style="object-fit: cover;width: 100%; height: 100%"
                                     class="card-img-top" alt="Unwell mood">
                             </div>
                             <div class="card-body">
@@ -426,7 +430,7 @@
                         <div class="card shadow-sm">
                             <div style="width: 100%; height: 30vh;">
                                 <img src="./assets/images/sweets.jpg"
-                                    style="object-fit: contain;width: 100%; height: 100%" class="card-img-top"
+                                    style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
                                     alt="Unwell mood">
                             </div>
                             <div class="card-body">
@@ -442,7 +446,7 @@
                         <div class="card shadow-sm">
                             <div style="width: 100%; height: 30vh;">
                                 <img src="./assets/images/chocolates.jpg"
-                                    style="object-fit: contain;width: 100%; height: 100%" class="card-img-top"
+                                    style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
                                     alt="Unwell mood">
                             </div>
                             <div class="card-body">
@@ -458,7 +462,7 @@
                         <div class="card shadow-sm">
                             <div style="width: 100%; height: 30vh;">
                                 <img src="./assets/images/pyjamas.jpg"
-                                    style="object-fit: contain;width: 100%; height: 100%" class="card-img-top"
+                                    style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
                                     alt="Unwell mood">
                             </div>
                             <div class="card-body">
@@ -474,12 +478,12 @@
                     <button id="backSlide3"
                         class="d-inline-flex align-items-center  btn  btn-lg px-4 rounded-3 bg-secondary text-white"
                         type="button">
-                        <== <p class="h2 m-2">Back</p>
+                        <p class="h2 m-2">Back</p>
                     </button>
 
                     <button id="nextSlide3" class="d-inline-flex align-items-center  btn  btn-lg px-4 rounded-3"
-                        type="button" style="background-color: #003962; color:white">
-                        <p class="h2 m-2">Next</p> ==>
+                        type="button" style="background-color: #009EE2; color:white">
+                        <p class="h2 m-2">Next</p> 
                     </button>
 
 
@@ -497,7 +501,7 @@
                         <div class="card shadow-sm">
                             <div style="width: 100%; height: 30vh;">
                                 <img src="./assets/images/temple-hall.jpg"
-                                    style="object-fit: contain;width: 100%; height: 100%" class="card-img-top"
+                                    style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
                                     alt="Unwell mood">
                             </div>
                             <div class="card-body">
@@ -513,7 +517,7 @@
                         <div class="card shadow-sm">
                             <div style="width: 100%; height: 30vh;">
                                 <img src="./assets/images/phab-club.jpg"
-                                    style="object-fit: contain;width: 100%; height: 100%" class="card-img-top"
+                                    style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
                                     alt="Unwell mood">
                             </div>
                             <div class="card-body">
@@ -528,7 +532,7 @@
                     <!-- <div class="col" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#bed">
                         <div class="card shadow-sm">
                             <div style="width: 100%; height: 30vh;">
-                                <img src="./assets/images/bed.jpg" style="object-fit: contain;width: 100%; height: 100%"
+                                <img src="./assets/images/bed.jpg" style="object-fit: cover;width: 100%; height: 100%"
                                     class="card-img-top" alt="Unwell mood">
                             </div>
                             <div class="card-body">
@@ -544,7 +548,7 @@
                         <div class="card shadow-sm">
                             <div style="width: 100%; height: 30vh;">
                                 <img src="./assets/images/sweets.jpg"
-                                    style="object-fit: contain;width: 100%; height: 100%" class="card-img-top"
+                                    style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
                                     alt="Unwell mood">
                             </div>
                             <div class="card-body">
@@ -560,7 +564,7 @@
                         <div class="card shadow-sm">
                             <div style="width: 100%; height: 30vh;">
                                 <img src="./assets/images/chocolates.jpg"
-                                    style="object-fit: contain;width: 100%; height: 100%" class="card-img-top"
+                                    style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
                                     alt="Unwell mood">
                             </div>
                             <div class="card-body">
@@ -576,7 +580,7 @@
                         <div class="card shadow-sm">
                             <div style="width: 100%; height: 30vh;">
                                 <img src="./assets/images/pyjamas.jpg"
-                                    style="object-fit: contain;width: 100%; height: 100%" class="card-img-top"
+                                    style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
                                     alt="Unwell mood">
                             </div>
                             <div class="card-body">
@@ -592,7 +596,7 @@
                     <button id="backSlide4"
                         class="d-inline-flex align-items-center  btn  btn-lg px-4 rounded-3 bg-secondary text-white"
                         type="button">
-                        <== <p class="h2 m-2">Back</p>
+                        <p class="h2 m-2">Back</p>
                     </button>
 
 
@@ -696,7 +700,7 @@
                     <button id="backActivitySad"
                         class="d-inline-flex align-items-center  btn  btn-lg px-4 rounded-3 bg-secondary text-white"
                         type="button">
-                        <== <p class="h2 m-2">Back</p>
+                        <p class="h2 m-2">Back</p>
                     </button>
 
 
@@ -715,7 +719,7 @@
                         <div class="card shadow-sm">
                             <div style="width: 100%; height: 60vh;">
                                 <img src="./assets/images/feelin-unwell.jpg" class="card-img-top"
-                                    style="object-fit: contain;width: 100%; height: 100%"
+                                    style="object-fit: cover;width: 100%; height: 100%"
                                     alt="Just feeling unwell, no pain actually">
                             </div>
                             <div class="card-body">
@@ -736,7 +740,7 @@
                         <div class="card shadow-sm">
                             <div style="width: 100%; height: 60vh;">
                                 <img src="./assets/images/feeling-pain.jpg"
-                                    style="object-fit: contain;width: 100%; height: 100%" class="card-img-top"
+                                    style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
                                     alt="I had a bad dream">
                             </div>
                             <div class="card-body">
@@ -754,7 +758,7 @@
                     
                         <div class="card shadow-sm">
                             <div style="width: 100%; height: 60vh;">
-                                <img src="./assets/images/sore-throat.jpg" style="object-fit: contain;width: 100%; height: 100%"
+                                <img src="./assets/images/sore-throat.jpg" style="object-fit: cover;width: 100%; height: 100%"
                                     class="card-img-top" alt="I had a bad dream">
                             </div>
                             <div class="card-body">
@@ -772,7 +776,7 @@
                     
                         <div class="card shadow-sm">
                             <div style="width: 100%; height: 60vh;">
-                                <img src="./assets/images/blocked-nose.jpg" style="object-fit: contain;width: 100%; height: 100%"
+                                <img src="./assets/images/blocked-nose.jpg" style="object-fit: cover;width: 100%; height: 100%"
                                     class="card-img-top" alt="I am having blocked nose.
 
 ">
@@ -798,7 +802,7 @@
                     <button id="backActivityUnwell"
                         class="d-inline-flex align-items-center  btn  btn-lg px-4 rounded-3 bg-secondary text-white"
                         type="button">
-                        <== <p class="h2 m-2">Back</p>
+                        <p class="h2 m-2">Back</p>
                     </button>
 
 
@@ -1719,7 +1723,7 @@
                         <div class="card shadow-sm">
                             <div style="width: 100%; height: 30vh;">
                                 <img src="./assets/images/cup_tea.jpg"
-                                    style="object-fit: contain;width: 100%; height: 100%" class="card-img-top"
+                                    style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
                                     alt="I want a cup of tea">
                             </div>
                             <div class="card-body">
@@ -1750,7 +1754,7 @@
                         <div class="card shadow-sm">
                             <div style="width: 100%; height: 30vh;">
                                 <img src="./assets/images/cookies.jpg"
-                                    style="object-fit: contain;width: 100%; height: 100%" class="card-img-top"
+                                    style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
                                     alt="I want some biscuits">
                             </div>
                             <div class="card-body">
@@ -1781,7 +1785,7 @@
                         <div class="card shadow-sm">
                             <div style="width: 100%; height: 30vh;">
                                 <img src="./assets/images/toasted-bread.jpeg"
-                                    style="object-fit: contain;width: 100%; height: 100%" class="card-img-top"
+                                    style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
                                     alt="Unwell mood">
                             </div>
                             <div class="card-body">
@@ -1810,7 +1814,7 @@
 
 
                         <div style="width: 100%; height: 30vh;">
-                            <img src="./assets/images/squash.jpg" style="object-fit: contain;width: 100%; height: 100%"
+                            <img src="./assets/images/squash.jpg" style="object-fit: cover;width: 100%; height: 100%"
                                 class="card-img-top" alt="Unwell mood">
                         </div>
                         <div class="card-body">
@@ -1839,7 +1843,7 @@
 
                         <div style="width: 100%; height: 30vh;">
                             <img src="./assets/images/tomato_ketchup.jpg"
-                                style="object-fit: contain;width: 100%; height: 100%" class="card-img-top"
+                                style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
                                 alt="Unwell mood">
                         </div>
                         <div class="card-body">
@@ -1868,7 +1872,7 @@
 
                         <div style="width: 100%; height: 30vh;">
                             <img src="./assets/images/raspberry.jpg"
-                                style="object-fit: contain;width: 100%; height: 100%" class="card-img-top"
+                                style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
                                 alt="Unwell mood">
                         </div>
                         <div class="card-body">
@@ -1897,7 +1901,7 @@
 
                         <div style="width: 100%; height: 30vh;">
                             <img src="./assets/images/man-showering.jpg" class="card-img-top"
-                                style="object-fit: contain;width: 100%; height: 100%" alt="Excited mood">
+                                style="object-fit: cover;width: 100%; height: 100%" alt="Excited mood">
                         </div>
                         <div class="card-body">
                             <p class="card-text h2 text-center">
@@ -1925,7 +1929,7 @@
 
                         <div style="width: 100%; height: 30vh;">
                             <img src="./assets/images/swichon-tv.jpg" class="card-img-top"
-                                style="object-fit: contain;width: 100%; height: 100%" alt="Excited mood">
+                                style="object-fit: cover;width: 100%; height: 100%" alt="Excited mood">
                         </div>
                         <div class="card-body">
                             <p class="card-text h2 text-center">
@@ -1953,7 +1957,7 @@
 
                         <div style="width: 100%; height: 30vh;">
                             <img src="./assets/images/all-directions.jpg" class="card-img-top"
-                                style="object-fit: contain;width: 100%; height: 100%" alt="Sad mood">
+                                style="object-fit: cover;width: 100%; height: 100%" alt="Sad mood">
                         </div>
                         <div class="card-body">
                             <p class="card-text h2 text-center">
@@ -1981,7 +1985,7 @@
 
                         <div style="width: 100%; height: 30vh;">
                             <img src="./assets/images/temple-hall.jpg"
-                                style="object-fit: contain;width: 100%; height: 100%" class="card-img-top"
+                                style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
                                 alt="Unwell mood">
                         </div>
                         <div class="card-body">
@@ -2010,7 +2014,7 @@
 
                         <div style="width: 100%; height: 30vh;">
                             <img src="./assets/images/writings.jpg"
-                                style="object-fit: contain;width: 100%; height: 100%" class="card-img-top"
+                                style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
                                 alt="Unwell mood">
                         </div>
                         <div class="card-body">
@@ -2039,7 +2043,7 @@
 
                         <div style="width: 100%; height: 30vh;">
                             <img src="./assets/images/drive.jpg"
-                                style="object-fit: contain;width: 100%; height: 100%" class="card-img-top"
+                                style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
                                 alt="Unwell mood">
                         </div>
                         <div class="card-body">
@@ -2068,7 +2072,7 @@
 
                         <div style="width: 100%; height: 30vh;">
                             <img src="./assets/images/phab-club.jpg"
-                                style="object-fit: contain;width: 100%; height: 100%" class="card-img-top"
+                                style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
                                 alt="Unwell mood">
                         </div>
                         <div class="card-body">
@@ -2099,7 +2103,7 @@
 
                         <div style="width: 100%; height: 30vh;">
                             <img src="./assets/images/wheelchair.jpg"
-                                style="object-fit: contain;width: 100%; height: 100%" class="card-img-top" alt="Go out">
+                                style="object-fit: cover;width: 100%; height: 100%" class="card-img-top" alt="Go out">
                         </div>
                         <div class="card-body">
                             <p class="card-text h2 text-center">
@@ -2126,7 +2130,7 @@
 
 
                         <div style="width: 100%; height: 30vh;">
-                            <img src="./assets/images/church.webp" style="object-fit: contain;width: 100%; height: 100%"
+                            <img src="./assets/images/church.webp" style="object-fit: cover;width: 100%; height: 100%"
                                 class="card-img-top" alt="Unwell mood">
                         </div>
                         <div class="card-body">
@@ -2154,7 +2158,7 @@
 
 
                         <div style="width: 100%; height: 30vh;">
-                            <img src="./assets/images/bed.jpg" style="object-fit: contain;width: 100%; height: 100%"
+                            <img src="./assets/images/bed.jpg" style="object-fit: cover;width: 100%; height: 100%"
                                 class="card-img-top" alt="Unwell mood">
                         </div>
                         <div class="card-body">
@@ -2183,7 +2187,7 @@
 
 
                         <div style="width: 100%; height: 30vh;">
-                            <img src="./assets/images/sweets.jpg" style="object-fit: contain;width: 100%; height: 100%"
+                            <img src="./assets/images/sweets.jpg" style="object-fit: cover;width: 100%; height: 100%"
                                 class="card-img-top" alt="Unwell mood">
                         </div>
                         <div class="card-body">
@@ -2215,7 +2219,7 @@
 
                         <div style="width: 100%; height: 30vh;">
                             <img src="./assets/images/chocolates.jpg"
-                                style="object-fit: contain;width: 100%; height: 100%" class="card-img-top"
+                                style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
                                 alt="Unwell mood">
                         </div>
                         <div class="card-body">
@@ -2248,7 +2252,7 @@
 
 
                         <div style="width: 100%; height: 30vh;">
-                            <img src="./assets/images/pyjamas.jpg" style="object-fit: contain;width: 100%; height: 100%"
+                            <img src="./assets/images/pyjamas.jpg" style="object-fit: cover;width: 100%; height: 100%"
                                 class="card-img-top" alt="Unwell mood">
                         </div>
                         <div class="card-body">
@@ -2471,7 +2475,7 @@
                         <div class="card shadow-sm">
                             <div style="width: 100%; height: 60vh;">
                                 <img src="./assets/images/feeling-pain.jpg"
-                                    style="object-fit: contain;width: 100%; height: 100%" class="card-img-top"
+                                    style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
                                     alt="I had a bad dream">
                             </div>
                             <div class="card-body">
@@ -2503,7 +2507,7 @@
                         <div class="card shadow-sm">
                             <div style="width: 100%; height: 60vh;">
                                 <img src="./assets/images/sore-throat.jpg"
-                                    style="object-fit: contain;width: 100%; height: 100%" class="card-img-top"
+                                    style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
                                     alt="I had a bad dream">
                             </div>
                             <div class="card-body">
@@ -2535,7 +2539,7 @@
         
                         <div class="card shadow-sm">
                             <div style="width: 100%; height: 60vh;">
-                                <img src="./assets/images/blocked-nose.jpg" style="object-fit: contain;width: 100%; height: 100%"
+                                <img src="./assets/images/blocked-nose.jpg" style="object-fit: cover;width: 100%; height: 100%"
                                     class="card-img-top" alt="I had a bad dream">
                             </div>
                             <div class="card-body">

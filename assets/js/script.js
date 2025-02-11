@@ -676,6 +676,25 @@ function getMeal() {
     }
 }
 
+function toggleSlide(){
+    let slide1 = document.getElementById("slide1");
+    let slide2 = document.getElementById("slide2");
+
+    if(slide1.classList.contains("hide")){
+        slide1.classList.remove('hide')
+    }else{
+        slide1.classList.add("hide")
+    }
+
+    if(slide2.classList.contains("hide")){
+        slide2.classList.remove('hide')
+    }else{
+        slide2.classList.add("hide")
+    }
+}
+
+setInterval(()=> toggleSlide(), 5000);
+
 function getCurrentDate() {
     const date = new Date();
     const day = date.toLocaleString('en-US', { weekday: 'long' });
@@ -704,7 +723,7 @@ function getDaySuffix(day) {
 }
 
 let display_date = document.getElementById("display-date");
-display_date.innerHTML = " <div class='row'><div class='col text-center' style='margin-top: 30px'> <p style='font-size: 50px'>" + getGreeting() + ", Mr. Andrew McCracken" + "</p></div><div><div class='row'><div class='col text-center' style='margin-top: 10px'> <p style='font-size: 50px'>" + getCurrentDate() + "</p></div><div>";
+display_date.innerHTML = " <div class='row'><div class='col text-center' style='margin-top: 30px'> <p >" + getGreeting() + ", Mr. Andrew McCracken" + "</p></div><div><div class='row'><div class='col text-center' style='padding-bottom: 30px' > <p >" + getCurrentDate() + "</p></div><div>";
 
 let meal = document.getElementById("meal");
 meal.innerHTML = getMeal();

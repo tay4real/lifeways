@@ -1,6 +1,7 @@
-body {
+* {
     margin: 0;
-    padding: 0
+    padding: 0;
+        box-sizing: border-box;
 }
 
 .footer-bg {
@@ -9,6 +10,28 @@ body {
     color: #ffffff;
 }
 
+#display-date p {
+    color: #222222;
+    font-size: 24px;
+}
+
+@media only screen and (min-width: 600px) {
+
+    /* For tablets: */
+    #display-date p {
+
+        font-size: 30px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    /* For desktop: */
+    #display-date p {
+
+        font-size: 44px;
+    }
+}
 #nextslide {
     background-color: #003962;
 }
@@ -70,6 +93,9 @@ body {
 .bi {
     vertical-align: -.125em;
     fill: currentColor;
+}
+.hide {
+    display: none;
 }
 
 .nav-scroller {
