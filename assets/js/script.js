@@ -61,7 +61,7 @@ function getMeal() {
                                     'style="object-fit: cover;width: 100%; height: 100%" alt="Happy mood">'
 
         meal.innerHTML = '<p class="h1 text-center py-2">Option 1</p>' +
-            '<div class="d-flex gap-2 justify-content-center  rounded-3 p-3 choice"' +
+            '<div class="d-flex flex-wrap gap-2 justify-content-center  rounded-3 p-3 choice"' +
             'style="border: 2px solid orange; cursor: pointer;" data-bs-toggle="modal"' +
             ' data-bs-target="#breakfast1" data-bs-dismiss="modal">' +
 
@@ -135,7 +135,7 @@ function getMeal() {
 
 
             '<p class="h1 text-center py-2 m-0">Option 2</p>' +
-            '<div class="d-flex gap-2 justify-content-center  rounded-3 p-3"' +
+            '<div class="d-flex flex-wrap gap-2 justify-content-center  rounded-3 p-3"' +
             'style="border: 2px solid orange; cursor: pointer;" data-bs-toggle="modal"' +
             'data-bs-target="#breakfast2" data-bs-dismiss="modal">' +
 
