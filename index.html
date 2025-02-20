@@ -8,6 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
         <link rel="shortcut icon" href="./assets/images/favicon-bg.png" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
@@ -35,10 +37,10 @@
                 <h1 id="display-date" class="text-body-emphasis"
                     style="position: absolute; top: 40px; background-color: rgba(255,255,255, 0.3);"></h1>
                 <div class="d-flex justify-content-end align-items-center mt-4"
-                    style="position: absolute; bottom: 30px; right: 20px; left: 20px;">
-                    <button id="nextSlide" class="d-inline-flex align-items-center  btn  btn-lg px-4 rounded-3"
-                        type="button" style="background-color: #009EE2; color:white">
-                        <p class="h2">Next</p> 
+                    style="position: absolute; top: 10px; right: 20px; left: 20px;">
+                    <button id="nextSlide" class="d-inline-flex align-items-center  btn  btn-lg " type="button"
+                        style="background-color: #CFD502; color:#403D35; border-radius: 50px; height: 50px; width: 50px;">
+                        <i class="fa-solid fa-chevron-right" style="font-size: 30px;"></i>
                     </button>
                 </div>
             </div>
@@ -52,9 +54,10 @@
             </div>
         </section> -->
 
-        <div id="mood" class="album mt-5 py-5 bg-body-tertiary d-none">
+        <div id="mood" class="album mt-3 py-3 bg-body-tertiary d-none" style="position: relative;">
             <div class="container">
-                <p class="text-center title" >How are you feeling Today?</p>
+                <p id="read2" class="text-center title">How are you feeling Today? <span id="speak2" style="cursor: pointer;"><i
+                            class='fa-solid fa-volume-high'></i></span></p>
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-3">
                     <div id="happy" class="col" style="cursor: pointer;">
                         <div class="card shadow-sm">
@@ -63,8 +66,8 @@
                                     style="object-fit: cover;width: 100%; height: 100%" alt="Happy mood">
                             </div>
                             <div class="card-body">
-                                <p class="card-text h2 text-center">
-                                    Happy
+                                <p id="read3" class="card-text h2 text-center">
+                                    Happy <span id="speak3" style="cursor: pointer;"><i class='fa-solid fa-volume-high'></i></span>
                                 </p>
 
                             </div>
@@ -77,8 +80,8 @@
                                     style="object-fit: cover;width: 100%; height: 100%" alt="Excited mood">
                             </div>
                             <div class="card-body">
-                                <p class="card-text h2 text-center">
-                                    Excited
+                                <p id="read4" class="card-text h2 text-center">
+                                    Excited <span id="speak4" style="cursor: pointer;"><i class='fa-solid fa-volume-high'></i></span>
                                 </p>
 
                             </div>
@@ -91,8 +94,8 @@
                                     style="object-fit: cover;width: 100%; height: 100%" alt="Sad mood">
                             </div>
                             <div class="card-body">
-                                <p class="card-text h2 text-center">
-                                    Sad
+                                <p id="read5" class="card-text h2 text-center">
+                                    Sad <span id="speak5" style="cursor: pointer;"><i class='fa-solid fa-volume-high'></i></span>
                                 </p>
 
                             </div>
@@ -107,8 +110,8 @@
                                     alt="Unwell mood">
                             </div>
                             <div class="card-body">
-                                <p class="card-text h2 text-center">
-                                    Unwell
+                                <p id="read6" class="card-text h2 text-center">
+                                    Unwell <span id="speak6" style="cursor: pointer;"><i class='fa-solid fa-volume-high'></i></span>
                                 </p>
 
                             </div>
@@ -118,12 +121,13 @@
 
 
                 </div>
-                <div class="d-flex  justify-content-between align-items-center mt-4">
+                <div class="d-flex  justify-content-between align-items-center mt-4" style="position: absolute; top: 10px; left: 30px">
                     <button id="firstSlide"
-                        class="d-inline-flex align-items-center  btn  btn-lg px-4 rounded-3 bg-secondary text-white"
-                        type="button">
-                        <p class="h2 m-2">Back</p>
+                        class="d-inline-flex align-items-center btn  btn-lg"
+                        type="button" style="background-color: #CFD502; color:#403D35;border-radius: 50px; height: 50px; width: 50px;">
+                        <i class="fa-solid fa-chevron-left" style="font-size:30px"></i>
                     </button>
+
                 </div>
             </div>
         </div>
@@ -134,20 +138,21 @@
             </div>
         </section> -->
 
-        <div id="activity1" class="album mt-5 py-5 bg-body-tertiary d-none">
+        <div id="activity1" class="album mt-3 py-3 bg-body-tertiary d-none" style="position: relative;">
             <div class="container">
-                <p class="text-center title" >Okay! What do you want now Mr. Andrew McCracken?</p>
+                <p id="read7" class="text-center title">Okay! What do you want now Mr. Andrew McCracken? <span id="speak7"
+                        style="cursor: pointer;"><i class='fa-solid fa-volume-high'></i></span></p>
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 
                     <div class="col" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                         <div class="card shadow-sm">
                             <div id="eat" style="width: 100%; height: 40vh;">
-                                <img src="./assets/images/eat.webp" class="card-img-top"
-                                    style="object-fit: cover;width: 100%; height: 100%" alt="Happy mood">
+                                <!-- <img src="./assets/images/eat.webp" class="card-img-top"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                    style="object-fit: cover;width: 100%; height: 100%" alt="Happy mood"> -->
                             </div>
                             <div class="card-body">
                                 <p id="meal" class="card-text h2 text-center">
-                                    I want my Breakfast
+                                    I want my Breakfast <span id="speak8" style="cursor: pointer;"><i class='fa-solid fa-volume-high'></i></span>
                                 </p>
 
                             </div>
@@ -165,8 +170,8 @@
                                     alt="I want a cup of tea">
                             </div>
                             <div class="card-body">
-                                <p class="card-text h2 text-center">
-                                    I want a cup of tea
+                                <p id="read9" class="card-text h2 text-center">
+                                    I want a cup of tea <span id="speak9" style="cursor: pointer;"><i class='fa-solid fa-volume-high'></i></span>
                                 </p>
 
                             </div>
@@ -182,8 +187,8 @@
                                     alt="I want some biscuits">
                             </div>
                             <div class="card-body">
-                                <p class="card-text h2 text-center">
-                                    I want some biscuits
+                                <p id="read10" class="card-text h2 text-center">
+                                    I want some biscuits <span id="speak10" style="cursor: pointer;"><i class='fa-solid fa-volume-high'></i></span>
                                 </p>
 
                             </div>
@@ -198,8 +203,8 @@
                                     alt="Unwell mood">
                             </div>
                             <div class="card-body">
-                                <p class="card-text h2 text-center">
-                                    I want some toasted bread
+                                <p id="read11" class="card-text h2 text-center">
+                                    I want some toast <span id="speak11" style="cursor: pointer;"><i class='fa-solid fa-volume-high'></i></span>
                                 </p>
 
                             </div>
@@ -214,8 +219,8 @@
                                     alt="Unwell mood">
                             </div>
                             <div class="card-body">
-                                <p class="card-text h2 text-center">
-                                    I want some squash
+                                <p id="read12" class="card-text h2 text-center">
+                                    I want some squash <span id="speak12" style="cursor: pointer;"><i class='fa-solid fa-volume-high'></i></span>
                                 </p>
 
                             </div>
@@ -230,8 +235,9 @@
                                     alt="Unwell mood">
                             </div>
                             <div class="card-body">
-                                <p class="card-text h2 text-center">
-                                    Add more Tomato ketchup to my meal
+                                <p id="read13" class="card-text h2 text-center">
+                                    Add more Tomato ketchup to my meal <span id="speak13" style="cursor: pointer;"><i
+                                            class='fa-solid fa-volume-high'></i></span>
                                 </p>
 
                             </div>
@@ -240,24 +246,26 @@
 
 
                 </div>
-                <div class="d-flex  justify-content-between align-items-center mt-4">
+                <div class="d-flex  justify-content-between align-items-center mt-4" style="">
                     <button id="backSlide1"
-                        class="d-inline-flex align-items-center  btn  btn-lg px-4 rounded-3 bg-secondary text-white"
-                        type="button">
-                        <p class="h2 m-2">Back</p>
+                        class="d-inline-flex align-items-center btn  btn-lg"
+                        type="button" style="background-color: #CFD502; color:#403D35;border-radius: 50px; height: 50px; width: 50px;position: absolute; top:60px; left: 20px">
+                        <i class="fa-solid fa-chevron-left" style="font-size:30px"></i>
                     </button>
 
-                    <button id="nextSlide1" class="d-inline-flex align-items-center  btn  btn-lg px-4 rounded-3"
-                        type="button" style="background-color: #009EE2; color:white">
-                        <p class="h2 m-2">Next</p> 
+                    <button id="nextSlide1" class="d-inline-flex align-items-center  btn  btn-lg " type="button"
+                        style="background-color: #CFD502; color:#403D35;border-radius: 50px; height: 50px; width: 50px; position: absolute; top:60px; right: 20px">
+                        <i class="fa-solid fa-chevron-right" style="font-size: 30px;"></i>
                     </button>
+
                 </div>
             </div>
         </div>
 
-        <div id="activity2" class="album mt-5 py-5 bg-body-tertiary d-none">
+        <div id="activity2" class="album mt-3 py-3 bg-body-tertiary d-none" style="position: relative">
             <div class="container">
-                <p class="text-center title" >Okay! What do you want now Mr. Andrew McCracken?</p>
+                <p id="read14" class="text-center title">Okay! What do you want now Mr. Andrew McCracken? <span id="speak14"
+                        style="cursor: pointer;"><i class='fa-solid fa-volume-high'></i></span></p>
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 
 
@@ -269,8 +277,8 @@
                                     alt="Unwell mood">
                             </div>
                             <div class="card-body">
-                                <p class="card-text h2 text-center">
-                                    Add Jam to my sandwich
+                                <p id="read15" class="card-text h2 text-center">
+                                    Add Jam to my sandwich <span id="speak15" style="cursor: pointer;"><i class='fa-solid fa-volume-high'></i></span>
                                 </p>
 
                             </div>
@@ -284,8 +292,8 @@
                                     style="object-fit: cover;width: 100%; height: 100%" alt="Excited mood">
                             </div>
                             <div class="card-body">
-                                <p class="card-text h2 text-center">
-                                    I want to have my Bath
+                                <p id="read16" class="card-text h2 text-center">
+                                    I want to have my Bath <span id="speak16" style="cursor: pointer;"><i class='fa-solid fa-volume-high'></i></span>
                                 </p>
 
                             </div>
@@ -299,8 +307,8 @@
                                     style="object-fit: cover;width: 100%; height: 100%" alt="Excited mood">
                             </div>
                             <div class="card-body">
-                                <p class="card-text h2 text-center">
-                                    Switch on My TV
+                                <p id="read17" class="card-text h2 text-center">
+                                    Switch on My TV <span id="speak17" style="cursor: pointer;"><i class='fa-solid fa-volume-high'></i></span>
                                 </p>
 
                             </div>
@@ -314,8 +322,9 @@
                                     style="object-fit: cover;width: 100%; height: 100%" alt="Sad mood">
                             </div>
                             <div class="card-body">
-                                <p class="card-text h2 text-center">
-                                    I want to go to ALL DIRECTIONS IN Dartford
+                                <p id="read18" class="card-text h2 text-center">
+                                    I want to go to ALL DIRECTIONS IN Dartford <span id="speak18" style="cursor: pointer;"><i
+                                            class='fa-solid fa-volume-high'></i></span>
                                 </p>
 
                             </div>
@@ -330,8 +339,9 @@
                                     alt="Unwell mood">
                             </div>
                             <div class="card-body">
-                                <p class="card-text h2 text-center">
-                                    I want to do some writings
+                                <p id="read19" class="card-text h2 text-center">
+                                    I want to do some writings <span id="speak19" style="cursor: pointer;"><i
+                                            class='fa-solid fa-volume-high'></i></span>
                                 </p>
 
                             </div>
@@ -348,8 +358,8 @@
                                     alt="Unwell mood">
                             </div>
                             <div class="card-body">
-                                <p class="card-text h2 text-center">
-                                    I want to go for a drive
+                                <p id="read20" class="card-text h2 text-center">
+                                    I want to go for a drive <span id="speak20" style="cursor: pointer;"><i class='fa-solid fa-volume-high'></i></span>
                                 </p>
 
                             </div>
@@ -360,22 +370,24 @@
                 </div>
                 <div class="d-flex  justify-content-between align-items-center mt-4">
                     <button id="backSlide2"
-                        class="d-inline-flex align-items-center  btn  btn-lg px-4 rounded-3 bg-secondary text-white"
-                        type="button">
-                        <p class="h2 m-2">Back</p>
+                        class="d-inline-flex align-items-center btn  btn-lg "
+                        type="button" style="background-color: #CFD502; color:#403D35;border-radius: 50px; height: 50px; width: 50px; position:absolute; top:60px; left: 20px;">
+                        <i class="fa-solid fa-chevron-left" style="font-size:30px"></i>
                     </button>
 
-                    <button id="nextSlide2" class="d-inline-flex align-items-center  btn  btn-lg px-4 rounded-3"
-                        type="button" style="background-color: #009EE2; color:white">
-                        <p class="h2 m-2">Next</p> 
+                    <button id="nextSlide2" class="d-inline-flex align-items-center btn  btn-lg" type="button"
+                        style="background-color: #CFD502; color:#403D35;border-radius: 50px; height: 50px; width: 50px; position:absolute; top:60px; right: 20px;">
+                        <i class="fa-solid fa-chevron-right" style="font-size: 30px;"></i>
                     </button>
+                    
                 </div>
             </div>
         </div>
 
-        <div id="activity3" class="album mt-5 py-5 bg-body-tertiary d-none">
+        <div id="activity3" class="album mt-3 py-3 bg-body-tertiary d-none" style="position: relative;">
             <div class="container">
-                <p class="text-center title" >Okay! What do you want now Mr. Andrew McCracken?</p>
+                <p id="read21" class="text-center title">Okay! What do you want now Mr. Andrew McCracken? <span id="speak21"
+                        style="cursor: pointer;"><i class='fa-solid fa-volume-high'></i></span></p>
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 
 
@@ -387,8 +399,9 @@
                                     alt="Go out">
                             </div>
                             <div class="card-body">
-                                <p class="card-text h2 text-center">
-                                    I want to go out in my wheelchair
+                                <p id="read22" class="card-text h2 text-center">
+                                    I want to go out in my wheelchair <span id="speak22" style="cursor: pointer;"><i
+                                            class='fa-solid fa-volume-high'></i></span>
                                 </p>
 
                             </div>
@@ -404,8 +417,8 @@
                                     alt="Unwell mood">
                             </div>
                             <div class="card-body">
-                                <p class="card-text h2 text-center">
-                                    I want to go to Church
+                                <p id="read23" class="card-text h2 text-center">
+                                    I want to go to Church <span id="speak23" style="cursor: pointer;"><i class='fa-solid fa-volume-high'></i></span>
                                 </p>
 
                             </div>
@@ -419,8 +432,8 @@
                                     class="card-img-top" alt="Unwell mood">
                             </div>
                             <div class="card-body">
-                                <p class="card-text h2 text-center">
-                                    I want to go to Bed
+                                <p id="read24" class="card-text h2 text-center">
+                                    I want to go to Bed <span id="speak24" style="cursor: pointer;"><i class='fa-solid fa-volume-high'></i></span>
                                 </p>
 
                             </div>
@@ -435,8 +448,8 @@
                                     alt="Unwell mood">
                             </div>
                             <div class="card-body">
-                                <p class="card-text h2 text-center">
-                                    I want some sweets
+                                <p id="read25" class="card-text h2 text-center">
+                                    I want some sweets <span id="speak25" style="cursor: pointer;"><i class='fa-solid fa-volume-high'></i></span>
                                 </p>
 
                             </div>
@@ -451,8 +464,8 @@
                                     alt="Unwell mood">
                             </div>
                             <div class="card-body">
-                                <p class="card-text h2 text-center">
-                                    I want some chocolates
+                                <p id="read26" class="card-text h2 text-center">
+                                    I want some chocolates <span id="speak26" style="cursor: pointer;"><i class='fa-solid fa-volume-high'></i></span>
                                 </p>
 
                             </div>
@@ -467,8 +480,9 @@
                                     alt="Unwell mood">
                             </div>
                             <div class="card-body">
-                                <p class="card-text h2 text-center">
-                                    I want to change to my pyjamas
+                                <p id="read27" class="card-text h2 text-center">
+                                    I want to change to my pyjamas <span id="speak27" style="cursor: pointer;"><i
+                                            class='fa-solid fa-volume-high'></i></span>
                                 </p>
 
                             </div>
@@ -477,24 +491,27 @@
                 </div>
                 <div class="d-flex  justify-content-between align-items-center mt-4">
                     <button id="backSlide3"
-                        class="d-inline-flex align-items-center  btn  btn-lg px-4 rounded-3 bg-secondary text-white"
-                        type="button">
-                        <p class="h2 m-2">Back</p>
+                        class="d-inline-flex align-items-center  btn  btn-lg"
+                        type="button" style="background-color: #CFD502; color:#403D35;border-radius: 50px; height: 50px; width: 50px; position: absolute; top:60px; left: 20px;">
+                        <i class="fa-solid fa-chevron-left" style="font-size:30px"></i>
                     </button>
 
-                    <button id="nextSlide3" class="d-inline-flex align-items-center  btn  btn-lg px-4 rounded-3"
-                        type="button" style="background-color: #009EE2; color:white">
-                        <p class="h2 m-2">Next</p> 
+                    <button id="nextSlide3" class="d-inline-flex align-items-center  btn  btn-lg" type="button"
+                        style="background-color: #CFD502; color:#403D35;border-radius: 50px; height: 50px; width: 50px; position: absolute; top:60px; right: 20px;">
+                        <i class="fa-solid fa-chevron-right" style="font-size: 30px;"></i>
                     </button>
+
+                    
 
 
                 </div>
             </div>
         </div>
 
-        <div id="activity4" class="album mt-5 py-5 bg-body-tertiary d-none">
+        <div id="activity4" class="album mt-3 py-3 bg-body-tertiary d-none" style="position: relative;">
             <div class="container">
-                <p class="text-center title" >Okay! What do you want now Mr. Andrew McCracken?</p>
+                <p id="read28" class="text-center title">Okay! What do you want now Mr. Andrew McCracken? <span id="speak28"
+                        style="cursor: pointer;"><i class='fa-solid fa-volume-high'></i></span></p>
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 
 
@@ -506,8 +523,9 @@
                                     alt="Unwell mood">
                             </div>
                             <div class="card-body">
-                                <p class="card-text h2 text-center">
-                                    I want to go to Temple Hill community centre
+                                <p id="read29" class="card-text h2 text-center">
+                                    I want to go to Temple Hill community centre <span id="speak29" style="cursor: pointer;"><i
+                                            class='fa-solid fa-volume-high'></i></span>
                                 </p>
 
                             </div>
@@ -522,8 +540,8 @@
                                     alt="Unwell mood">
                             </div>
                             <div class="card-body">
-                                <p class="card-text h2 text-center">
-                                    I want to go to Phab Club
+                                <p id="read30" class="card-text h2 text-center">
+                                    I want to go to Phab Club <span id="speak30" style="cursor: pointer;"><i class='fa-solid fa-volume-high'></i></span>
                                 </p>
 
                             </div>
@@ -595,9 +613,9 @@
                 </div>
                 <div class="d-inline-flex gap-2 mt-4">
                     <button id="backSlide4"
-                        class="d-inline-flex align-items-center  btn  btn-lg px-4 rounded-3 bg-secondary text-white"
-                        type="button">
-                        <p class="h2 m-2">Back</p>
+                        class="d-inline-flex align-items-center  btn  btn-lg"
+                        type="button"  style="background-color: #CFD502; color:#403D35;border-radius: 50px; height: 50px; width: 50px; position: absolute; top:60px; left: 20px;">
+                        <i class="fa-solid fa-chevron-left" style="font-size:30px"></i>
                     </button>
 
 
@@ -606,10 +624,10 @@
         </div>
 
 
-        <div id="activity-sad" class="album mt-5 py-5 bg-body-tertiary d-none">
+        <div id="activity-sad" class="album mt-3 py-3 bg-body-tertiary d-none" style="position: relative;">
             <div class="container">
-                <p class="text-center d-flex align-items-center justify-content-center" style="font-size: 50px;">Feeling
-                    Sad? <img src="./assets/images/sad.png" style="margin-left: 10px" width="100" alt="feeling sad"></p>
+                <p id="read31" class="text-center d-flex align-items-center justify-content-center" style="font-size: 50px;">Feeling
+                    Sad? <span id="speak31" style="cursor: pointer;"><i class='fa-solid fa-volume-high'></i></span></p>
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                     <div class="col" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#wet-bed">
                         <div class="card shadow-sm">
@@ -618,8 +636,8 @@
                                     style="object-fit: cover;width: 100%; height: 100%" alt="I wet my bed">
                             </div>
                             <div class="card-body">
-                                <p id="meal" class="card-text h2 text-center">
-                                    I wet my bed
+                                <p id="read32" class="card-text h2 text-center">
+                                    I wet my bed <span id="speak32" style="cursor: pointer;"><i class='fa-solid fa-volume-high'></i></span>
 
                                 </p>
 
@@ -638,8 +656,8 @@
                                     alt="I had a bad dream">
                             </div>
                             <div class="card-body">
-                                <p class="card-text h2 text-center">
-                                    I had a bad dream
+                                <p id="read33" class="card-text h2 text-center">
+                                    I had a bad dream <span id="speak33" style="cursor: pointer;"><i class='fa-solid fa-volume-high'></i></span>
                                 </p>
 
                             </div>
@@ -655,8 +673,9 @@
                                     alt="I slipped while going to toilet">
                             </div>
                             <div class="card-body">
-                                <p class="card-text h2 text-center">
-                                    I slipped while going to toilet
+                                <p id="read34" class="card-text h2 text-center">
+                                    I slipped while going to toilet <span id="speak34" style="cursor: pointer;"><i
+                                            class='fa-solid fa-volume-high'></i></span>
 
                                 </p>
 
@@ -672,8 +691,9 @@
                                     alt="Because my room was too hot">
                             </div>
                             <div class="card-body">
-                                <p class="card-text h2 text-center">
-                                    Because my room was too hot
+                                <p id="read35" class="card-text h2 text-center">
+                                    Because my room was too hot <span id="speak35" style="cursor: pointer;"><i
+                                            class='fa-solid fa-volume-high'></i></span>
                                 </p>
 
                             </div>
@@ -688,8 +708,8 @@
                                     alt="My room was too cold">
                             </div>
                             <div class="card-body">
-                                <p class="card-text h2 text-center">
-                                    My room was too cold
+                                <p id="read36" class="card-text h2 text-center">
+                                    My room was too cold <span id="speak36" style="cursor: pointer;"><i class='fa-solid fa-volume-high'></i></span>
                                 </p>
 
                             </div>
@@ -699,9 +719,9 @@
                 </div>
                 <div class="d-inline-flex gap-2 mt-4">
                     <button id="backActivitySad"
-                        class="d-inline-flex align-items-center  btn  btn-lg px-4 rounded-3 bg-secondary text-white"
-                        type="button">
-                        <p class="h2 m-2">Back</p>
+                        class="d-inline-flex align-items-center btn  btn-lg"
+                        type="button" style="background-color: #CFD502; color:#403D35;border-radius: 50px; height: 50px; width: 50px; position: absolute; top:60px; left: 20px;">
+                        <i class="fa-solid fa-chevron-left" style="font-size:30px"></i>
                     </button>
 
 
@@ -711,7 +731,7 @@
         </div>
 
 
-        <div id="activity-unwell" class="album mt-5 py-5 bg-body-tertiary d-none">
+        <div id="activity-unwell" class="album mt-3 py-3 bg-body-tertiary d-none" style="position: relative;">
             <div class="container">
                 <p class="text-center d-flex align-items-center justify-content-center" style="font-size: 50px;">Unwell
                 </p>
@@ -724,8 +744,9 @@
                                     alt="Just feeling unwell, no pain actually">
                             </div>
                             <div class="card-body">
-                                <p id="meal" class="card-text h2 text-center">
-                                    Just feeling unwell, no pain actually
+                                <p id="read37" class="card-text h2 text-center">
+                                    Just feeling unwell, no pain actually <span id="speak37" style="cursor: pointer;"><i
+                                            class='fa-solid fa-volume-high'></i></span>
 
 
                                 </p>
@@ -745,8 +766,8 @@
                                     alt="I had a bad dream">
                             </div>
                             <div class="card-body">
-                                <p class="card-text h2 text-center">
-                                    Feeling pain. Where?
+                                <p id="read38" class="card-text h2 text-center">
+                                    Feeling pain. Where? <span id="speak38" style="cursor: pointer;"><i class='fa-solid fa-volume-high'></i></span>
 
                                 </p>
 
@@ -763,8 +784,8 @@
                                     class="card-img-top" alt="I had a bad dream">
                             </div>
                             <div class="card-body">
-                                <p class="card-text h2 text-center">
-                                    I am having sore throat
+                                <p id="read39" class="card-text h2 text-center">
+                                    I am having sore throat <span id="speak39" style="cursor: pointer;"><i class='fa-solid fa-volume-high'></i></span>
 
                     
                                 </p>
@@ -783,8 +804,8 @@
 ">
                             </div>
                             <div class="card-body">
-                                <p class="card-text h2 text-center">
-                                    I am having blocked nose
+                                <p id="read40" class="card-text h2 text-center">
+                                    I am having blocked nose <span id="speak40" style="cursor: pointer;"><i class='fa-solid fa-volume-high'></i></span>
 
                     
                                 </p>
@@ -801,9 +822,9 @@
                 </div>
                 <div class="d-inline-flex gap-2 mt-4">
                     <button id="backActivityUnwell"
-                        class="d-inline-flex align-items-center  btn  btn-lg px-4 rounded-3 bg-secondary text-white"
-                        type="button">
-                        <p class="h2 m-2">Back</p>
+                        class="d-inline-flex align-items-center btn  btn-lg"
+                        type="button" style="background-color: #CFD502; color:#403D35;border-radius: 50px; height: 50px; width: 50px; position: absolute; top:60px; left: 20px;">
+                        <i class="fa-solid fa-chevron-left" style="font-size:30px"></i>
                     </button>
 
 
@@ -1038,7 +1059,7 @@
                 <div class="modal-content">
 
                     <div id="meal-options" class="modal-body">
-                        <p class="h1 text-center py-2">Option 1</p>
+                        <p class="h1 text-center py-2">Option 1 </p>
                         <div class="d-flex gap-2 justify-content-center  rounded-3 p-3"
                             style="border: 2px solid orange; cursor: pointer;" data-bs-toggle="modal"
                             data-bs-target="#lunch1" data-bs-dismiss="modal">
@@ -1069,7 +1090,7 @@
                                         style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
                                         alt="Raspberry"></div>
                                 <div class="card-body">
-                                    <p class="card-text h4 text-center">Raspberry</p>
+                                    <p class="card-text h4 text-center">Jam</p>
                                 </div>
                             </div>
                             <div style="width: 40px; height: 40px;"><img src="./assets/images/plus.png"
@@ -1791,7 +1812,7 @@
                             </div>
                             <div class="card-body">
                                 <p class="card-text h2 text-center">
-                                    I want some toasted bread
+                                    I want some toast
                                 </p>
 
                             </div>
@@ -2467,31 +2488,98 @@
 
         <div class="modal fade" id="feeling-pain" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
             aria-labelledby="meal-title" aria-hidden="true">
-            <div class="modal-dialog " style="width: 100%">
+            <div class="modal-dialog modal-xl" style="width: 100%">
                 <div class="modal-content">
 
-                    <div class="modal-body">
+<div class="modal-body">
+    <p id="read58" class="h1 text-center py-2 m-0">Where are you feeling pain? <span id="speak58"
+            style="cursor: pointer;"><i class="fa-solid fa-volume-high"></i></span></p>
+    <div class="d-flex flex-wrap gap-2 justify-content-center  rounded-3 p-3 choice">
+    
+        <div class="card shadow-sm" style="width: 15em;cursor: pointer;" data-bs-toggle="modal" data-bs-target="#mychest"
+            data-bs-dismiss="modal">
+            <div style="width: 100%; height: 40vh;">
+                <img src="./assets/images/chest.jpg" style="object-fit: cover;width: 100%; height: 100%"
+                    class="card-img-top" alt="Pasta">
+            </div>
+            <div class="card-body">
+                <p id="read59" class="card-text h4 text-center">
+                    My Chest <span id="speak59" style="cursor: pointer;"><i class="fa-solid fa-volume-high"></i></span>
+                </p>
+    
+            </div>
+        </div>
+    
+        <div class="card shadow-sm" style="width: 15em;cursor: pointer;" data-bs-toggle="modal" data-bs-target="#myarm"
+            data-bs-dismiss="modal">
+            <div style="width: 100%; height: 40vh;">
+                <img src="./assets/images/arm.jpg" style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
+                    alt="Sandwich">
+            </div>
+            <div class="card-body">
+                <p id="read60" class="card-text h4 text-center">
+                    My Arm <span id="speak60" style="cursor: pointer;"><i class="fa-solid fa-volume-high"></i></span>
+                </p>
+    
+            </div>
+        </div>
+    
+        <div class="card shadow-sm" style="width: 15em;cursor: pointer;" data-bs-toggle="modal" data-bs-target="#myback"
+            data-bs-dismiss="modal">
+            <div style="width: 100%; height: 40vh;">
+                <img src="./assets/images/back.jpg" style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
+                    alt="Vegetable">
+            </div>
+            <div class="card-body">
+                <p id="read61" class="card-text h4 text-center">
+                    My Back <span id="speak61" style="cursor: pointer;"><i class="fa-solid fa-volume-high"></i></span>
+                </p>
 
+            </div>
+            </div>
 
-                        <div class="card shadow-sm">
-                            <div style="width: 100%; height: 60vh;">
-                                <img src="./assets/images/feeling-pain.jpg"
-                                    style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
-                                    alt="I had a bad dream">
+        <div class="card shadow-sm" style="width: 15em;cursor: pointer;" data-bs-toggle="modal" data-bs-target="#myhand"
+            data-bs-dismiss="modal">
+            <div style="width: 100%; height: 40vh;">
+                <img src="./assets/images/hand.jpg" style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
+                    alt="Medication">
+            </div>
+            <div class="card-body">
+                <p id="read62" class="card-text h4 text-center">
+                    My Hand <span id="speak62" style="cursor: pointer;"><i class="fa-solid fa-volume-high"></i></span>
+
+                </p>
+                                </div>
+                                </div>
+                                
+                                <div class="card shadow-sm" style="width: 15em;cursor: pointer;" data-bs-toggle="modal" data-bs-target="#myfeet"
+                                    data-bs-dismiss="modal">
+                                    <div style="width: 100%; height: 40vh;">
+                                        <img src="./assets/images/feet.jpg" style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
+                                            alt="Medication">
+                                    </div>
+                                    <div class="card-body">
+                                        <p id="read63" class="card-text h4 text-center">
+                                            My Feet <span id="speak63" style="cursor: pointer;"><i class="fa-solid fa-volume-high"></i></span>
+                
+                </p>
+            </div>
                             </div>
-                            <div class="card-body">
-                                <p class="card-text h2 text-center">
-                                    Feeling pain. Where?
+<div class="card shadow-sm" style="width: 15em;cursor: pointer;" data-bs-toggle="modal" data-bs-target="#mylegs"
+    data-bs-dismiss="modal">
+    <div style="width: 100%; height: 40vh;">
+        <img src="./assets/images/legs.jpg" style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
+            alt="Medication">
+    </div>
+    <div class="card-body">
+        <p id="read64" class="card-text h4 text-center">
+            My Legs <span id="speak64" style="cursor: pointer;"><i class="fa-solid fa-volume-high"></i></span>
 
-                                </p>
-
+        </p>
                             </div>
-                        </div>
-
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
-                    </div>
+                            </div>
+                            </div>
+                            </div>
                 </div>
             </div>
 
@@ -2563,21 +2651,190 @@
         
         </div>
 
+        <div class="modal fade" id="mychest" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="meal-title" aria-hidden="true">
+            <div class="modal-dialog " style="width: 100%">
+                <div class="modal-content">
+        
+                    <div class="modal-body">
+        
+        
+                        <div class="card shadow-sm">
+                            <div style="width: 100%; height: 40vh;">
+                                <img src="./assets/images/chest.jpg" style="object-fit: cover;width: 100%; height: 100%"
+                                    class="card-img-top" alt="I slipped while going to toilet">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text h2 text-center">
+                                    My Chest
+        
+                                </p>
+        
+                            </div>
+                        </div>
+        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        
+        
+        <div class="modal fade" id="myarm" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="meal-title" aria-hidden="true">
+            <div class="modal-dialog " style="width: 100%">
+                <div class="modal-content">
+        
+                    <div class="modal-body">
+        
+        
+                        <div class="card shadow-sm">
+                            <div style="width: 100%; height: 40vh;">
+                                <img src="./assets/images/arm.jpg" style="object-fit: cover;width: 100%; height: 100%"
+                                    class="card-img-top" alt="I slipped while going to toilet">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text h2 text-center">
+                                    My Arm
+        
+                                </p>
+        
+                            </div>
+                        </div>
+        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        
+        <div class="modal fade" id="myback" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="meal-title" aria-hidden="true">
+            <div class="modal-dialog " style="width: 100%">
+                <div class="modal-content">
+        
+                    <div class="modal-body">
+        
+        
+                        <div class="card shadow-sm">
+                            <div style="width: 100%; height: 40vh;">
+                                <img src="./assets/images/back.jpg" style="object-fit: cover;width: 100%; height: 100%"
+                                    class="card-img-top" alt="I slipped while going to toilet">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text h2 text-center">
+                                    My Chest
+        
+                                </p>
+        
+                            </div>
+                        </div>
+        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        
+        <div class="modal fade" id="myfeet" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="meal-title" aria-hidden="true">
+            <div class="modal-dialog " style="width: 100%">
+                <div class="modal-content">
+        
+                    <div class="modal-body">
+        
+        
+                        <div class="card shadow-sm">
+                            <div style="width: 100%; height: 40vh;">
+                                <img src="./assets/images/feet.jpg" style="object-fit: cover;width: 100%; height: 100%"
+                                    class="card-img-top" alt="I slipped while going to toilet">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text h2 text-center">
+                                    My Feet
+        
+                                </p>
+        
+                            </div>
+                        </div>
+        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        
+        <div class="modal fade" id="myhand" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="meal-title" aria-hidden="true">
+            <div class="modal-dialog " style="width: 100%">
+                <div class="modal-content">
+        
+                    <div class="modal-body">
+        
+                        <div class="card shadow-sm">
+                            <div style="width: 100%; height: 40vh;">
+                                <img src="./assets/images/hand.jpg" style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
+                                    alt="I slipped while going to toilet">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text h2 text-center">
+                                    My Hand
+        
+                                </p>
+        
+                            </div>
+                            </div>
+        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                    </div>
+                    </div>
+                    </div>
+        
+        </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        <div class="modal fade" id="mylegs" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="meal-title" aria-hidden="true">
+            <div class="modal-dialog " style="width: 100%">
+                <div class="modal-content">
+        
+                    <div class="modal-body">
+        
+                        <div class="card shadow-sm">
+                            <div style="width: 100%; height: 40vh;">
+                                <img src="./assets/images/legs.jpg" style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"
+                                    alt="I slipped while going to toilet">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text h2 text-center">
+                                    My Legs
+        
+                                </p>
+        
+                            </div>
+                            </div>
+        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                    </div>
+                    </div>
+                    </div>
+        
+        </div>
 
 
     </main>

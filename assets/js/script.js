@@ -60,7 +60,7 @@ function getMeal() {
         eat.innerHTML = '<img src="./assets/images/breakfast.jpg" class="card-img-top"' +
                                     'style="object-fit: cover;width: 100%; height: 100%" alt="Happy mood">'
 
-        meal.innerHTML = '<p class="h1 text-center py-2">Option 1</p>' +
+        meal.innerHTML = '<p class="h1 text-center py-2">Option 1 <span id="speak41" style="cursor: pointer;"><i class="fa-solid fa-volume-high"></i></span></p>' +
             '<div class="d-flex flex-wrap gap-2 justify-content-center  rounded-3 p-3 choice"' +
             'style="border: 2px solid orange; cursor: pointer;" data-bs-toggle="modal"' +
             ' data-bs-target="#breakfast1" data-bs-dismiss="modal">' +
@@ -134,7 +134,7 @@ function getMeal() {
 
 
 
-            '<p class="h1 text-center py-2 m-0">Option 2</p>' +
+            '<p class="h1 text-center py-2 m-0">Option 2 <span id="speak42" style="cursor: pointer;"><i class="fa-solid fa-volume-high"></i></span></p>' +
             '<div class="d-flex flex-wrap gap-2 justify-content-center  rounded-3 p-3"' +
             'style="border: 2px solid orange; cursor: pointer;" data-bs-toggle="modal"' +
             'data-bs-target="#breakfast2" data-bs-dismiss="modal">' +
@@ -210,10 +210,10 @@ function getMeal() {
     } else if (currentTime < 18) {
         title.innerText = "What do you want for Lunch?"
 
-        eat.innerHTML = '<img src="./assets/images/breakfast.jpg" class="card-img-top"' +
+        eat.innerHTML = '<img src="./assets/images/lunch.jpg" class="card-img-top"' +
                                     'style="object-fit: cover;width: 100%; height: 100%" alt="Happy mood">'
 
-        meal.innerHTML = '<p class="h1 text-center py-2">Option 1</p>' +
+        meal.innerHTML = '<p class="h1 text-center py-2">Option 1 <span id="speak43" style="cursor: pointer;"><i class="fa-solid fa-volume-high"></i></span></p>' +
         '<div class="d-flex flex-wrap gap-2 justify-content-center  rounded-3 p-3"' +
         'style="border: 2px solid orange; cursor: pointer;" data-bs-toggle="modal"' + 'data-bs-target="#lunch1"' +
         'data-bs-dismiss="modal">' +
@@ -233,7 +233,7 @@ function getMeal() {
                     'alt="Sandwich with ham and Butter"></div>' +
             '<div class="card-body">' +
                 '<p class="card-text h4 text-center">Sandwich with ham and Butter</p>' +
-            '</div>' +
+            '</div>' +   
        ' </div>' +
         '<div style="width: 40px; height: 40px;"><img src="./assets/images/plus.png"' +
                 'style="object-fit: cover;width: 100%; height: 100%" class="card-img-top"' + 'alt="Unwell mood"></div>' +
@@ -255,7 +255,7 @@ function getMeal() {
         '</div>' +
     '</div>' +
     '<div class="my-4" style="height: 10px; background-color: gray; width: 100%;"></div>' +
-    '<p class="h1 text-center py-2 m-0">Option 2</p>' +
+    '<p class="h1 text-center py-2 m-0">Option 2 <span id="speak44" style="cursor: pointer;"><i class="fa-solid fa-volume-high"></i></span></p>' +
     '<div class="d-flex flex-wrap gap-2 justify-content-center  rounded-3 p-3"' +
         'style="border: 2px solid orange; cursor: pointer;" data-bs-dismiss="modal">' +
         '<div class="card shadow-sm" style="width: 15em;">' +
@@ -275,7 +275,7 @@ function getMeal() {
             '</div>' +
             '<div class="card-body">' +
                 '<p class="card-text h4 text-center">Sandwich with Omelette</p>' +
-            '</div>' +
+            '</div>' +      
        ' </div>' +
         '<div style="width: 40px; height: 40px;"><img src="./assets/images/plus.png"' +
                 'style="object-fit: cover;width: 100%; height: 100%" class="card-img-top" alt="Unwell mood"></div>' +
@@ -298,14 +298,14 @@ function getMeal() {
         '</div>' +
    ' </div>' +
    ' <div class="my-4" style="height: 10px; background-color: gray; width: 100%;"></div>' +
-    '<p class="h1 text-center py-2">Option 3: I want to Have my Lunch Out</p>' +
+    '<p id="read45" class="h1 text-center py-2">Option 3: I want to Have my Lunch Out <span id="speak45" style="cursor: pointer;"><i class="fa-solid fa-volume-high"></i></span></p>' +
    ' <div class="d-flex flex-wrap gap-2 justify-content-center  rounded-3 p-3">' +
        ' <div class="card shadow-sm" style="border: 2px solid orange;width: 15em;cursor: pointer;" data-bs-toggle="modal"' +
             'data-bs-target="#eatout1" data-bs-dismiss="modal">' +
             '<div style="width: 100%; height: 40vh;"><img src="./assets/images/McDonald.png"' +
                     'style="object-fit: cover;width: 100%; height: 100%" class="card-img-top" alt="MCDONALD"></div>' +
             '<div class="card-body">' +
-                '<p class="card-text h4 text-center">MCDONALD</p>' +
+                '<p id="read46" class="card-text h4 text-center">MCDONALD <span id="speak46" style="cursor: pointer;"><i class="fa-solid fa-volume-high"></i></span></p>' +
             '</div>' +
         '</div>' +
         '<div class="card shadow-sm" style="border: 2px solid orange;width: 15em;cursor: pointer;" data-bs-toggle="modal"' +
@@ -313,7 +313,7 @@ function getMeal() {
             '<div style="width: 100%; height: 40vh;"><img src="./assets/images/KFC.jpg"' +
                     'style="object-fit: cover;width: 100%; height: 100%" class="card-img-top" alt="KFC"></div>' +
             '<div class="card-body">' +
-                '<p class="card-text h4 text-center">KFC</p>' +
+                '<p id="read47" class="card-text h4 text-center">KFC <span id="speak47" style="cursor: pointer;"><i class="fa-solid fa-volume-high"></i></span></p>' +
             '</div>' +
         '</div>' +
         '<div class="card shadow-sm" style="border: 2px solid orange;width: 15em;cursor: pointer;" data-bs-toggle="modal"' +
@@ -321,7 +321,7 @@ function getMeal() {
             '<div style="width: 100%; height: 40vh;"><img src="./assets/images/asda-dartford.jpg"' +
                     'style="object-fit: cover;width: 100%; height: 100%" class="card-img-top" alt="ASDA DARTFORD"></div>' +
             '<div class="card-body">' +
-               ' <p class="card-text h4 text-center">ASDA CAFE IN DARTFORD</p>' +
+               ' <p id="read48" class="card-text h4 text-center">ASDA CAFE IN DARTFORD <span id="speak48" style="cursor: pointer;"><i class="fa-solid fa-volume-high"></i></span></p>' +
            ' </div>' +
        ' </div>' +
         '<div class="card shadow-sm" style="border: 2px solid orange;width: 15em;cursor: pointer;" data-bs-toggle="modal"' +
@@ -329,7 +329,7 @@ function getMeal() {
             '<div style="width: 100%; height: 40vh;"><img src="./assets/images/Time-Plaice.jpg"' +
                     'style="object-fit: cover;width: 100%; height: 100%" class="card-img-top" alt="Time & Plaice"></div>' +
            ' <div class="card-body">' +
-                '<p class="card-text h4 text-center">Time & Plaice</p>' +
+                '<p id="read49" class="card-text h4 text-center">Time & Plaice <span id="speak49" style="cursor: pointer;"><i class="fa-solid fa-volume-high"></i></span></p>' +
             '</div>' +
         '</div>' +
         '<div class="card shadow-sm" style="border: 2px solid orange;width: 15em;cursor: pointer;" data-bs-toggle="modal"' +
@@ -337,7 +337,7 @@ function getMeal() {
             '<div style="width: 100%; height: 40vh;"><img src="./assets/images/coastacafe-dartford.jpg"' +
                     'style="object-fit: cover;width: 100%; height: 100%" class="card-img-top" alt="MCDONALD"></div>' +
            ' <div class="card-body">' +
-                '<p class="card-text h4 text-center">COSTA COFFEE DARTFORD</p>' +
+                '<p id="read50" class="card-text h4 text-center">COSTA COFFEE DARTFORD <span id="speak50" style="cursor: pointer;"><i class="fa-solid fa-volume-high"></i></span></p>' +
            ' </div>' +
        ' </div>' +
         '<div class="card shadow-sm" style="border: 2px solid orange;width: 15em;cursor: pointer;" data-bs-toggle="modal"' +
@@ -345,7 +345,7 @@ function getMeal() {
             '<div style="width: 100%; height: 40vh;"><img src="./assets/images/costacofee_longfield.jpg"' +
                     'style="object-fit: cover;width: 100%; height: 100%" class="card-img-top" alt="MCDONALD"></div>' +
             '<div class="card-body">' +
-                '<p class="card-text h4 text-center">COSTA COFFEE LONGFIELD</p>' +
+                '<p id="read51" class="card-text h4 text-center">COSTA COFFEE LONGFIELD <span id="speak51" style="cursor: pointer;"><i class="fa-solid fa-volume-high"></i></span></p>' +
            ' </div>' +
        ' </div>' 
         return "I want my Lunch";
@@ -368,8 +368,8 @@ function getMeal() {
                 'alt="Mashed Potatoes">' +
                 '</div>' +
                 '<div class="card-body">' +
-                '<p class="card-text h4 text-center">' +
-                'Fish and Chips' +
+                '<p id="read52 class="card-text h4 text-center">' +
+                'Fish and Chips <span id="speak52" style="cursor: pointer;"><i class="fa-solid fa-volume-high"></i></span>' +
                 '</p>' +
 
                 '</div>' +
@@ -377,7 +377,7 @@ function getMeal() {
 
                 '</div > '
         } else {
-            meal.innerHTML = '<p class="h1 text-center py-2">Option 1</p>' +
+            meal.innerHTML = '<p id="read53" class="h1 text-center py-2">Option 1 <span id="speak53" style="cursor: pointer;"><i class="fa-solid fa-volume-high"></i></span></p>' +
                 ' <div class="d-flex flex-wrap gap-2 justify-content-center  rounded-3 p-3 choice"' +
                 'style="border: 2px solid orange; cursor: pointer;" data-bs-toggle="modal"' +
                 'data-bs-target="#dinner1" data-bs-dismiss="modal">' +
@@ -389,7 +389,7 @@ function getMeal() {
                 'alt="Mashed Potatoes">' +
                 '</div>' +
                 '<div class="card-body">' +
-                '<p class="card-text h4 text-center">' +
+                '<p  class="card-text h4 text-center">' +
                 'Mashed Potatoes' +
                 '</p>' +
 
@@ -406,8 +406,8 @@ function getMeal() {
                 'alt="Sandwich">' +
                 '</div>' +
                 '<div class="card-body">' +
-                '<p class="card-text h4 text-center">' +
-                'Already made sauce' +
+                '<p  class="card-text h4 text-center">' +
+                'Already made sauce ' +
                 ' </p>' +
 
                 '</div>' +
@@ -423,7 +423,7 @@ function getMeal() {
                 'alt="Vegetable">' +
                 '</div>' +
                 '<div class="card-body">' +
-                ' <p class="card-text h4 text-center">' +
+                ' <p  class="card-text h4 text-center">' +
                 'Vegetable' +
                 '</p>' +
 
@@ -440,8 +440,8 @@ function getMeal() {
                 'alt="Medication">' +
                 '</div>' +
                 '<div class="card-body">' +
-                '<p class="card-text h4 text-center">' +
-                'Cup of tea/coffee' +
+                '<p  class="card-text h4 text-center">' +
+                'Cup of tea/coffee ' +
 
                 '</p>' +
 
@@ -449,7 +449,7 @@ function getMeal() {
                 '</div>' +
                 '</div>' +
                 '<div class="my-4" style="height: 10px; background-color: gray; width: 100%;"></div>' +
-                ' <p class="h1 text-center py-2 m-0">Option 2</p>' +
+                ' <p id="read54" class="h1 text-center py-2 m-0">Option 2 <span id="speak54" style="cursor: pointer;"><i class="fa-solid fa-volume-high"></i></span></p>' +
                 '<div class="d-flex flex-wrap gap-2 justify-content-center  rounded-3 p-3 choice"' +
                 'style="border: 2px solid orange; cursor: pointer;" data-bs-toggle="modal"' +
                 'data-bs-target="#dinner2" data-bs-dismiss="modal">' +
@@ -521,7 +521,7 @@ function getMeal() {
                 '</div>' +
                 '</div>' +
                 '<div class="my-4" style="height: 10px; background-color: gray; width: 100%;"></div>' +
-                ' <p class="h1 text-center py-2 m-0">Option 3</p>' +
+                ' <p id="read55" class="h1 text-center py-2 m-0">Option 3 <span id="speak55" style="cursor: pointer;"><i class="fa-solid fa-volume-high"></i></span></p>' +
                 '<div class="d-flex flex-wrap gap-2 justify-content-center  rounded-3 p-3 choice"' +
                 'style="border: 2px solid orange; cursor: pointer;" data-bs-toggle="modal"' +
                 'data-bs-target="#dinner3" data-bs-dismiss="modal">' +
@@ -534,7 +534,7 @@ function getMeal() {
                         '</div>' +
                         '<div class="card-body">' +
                             '<p class="card-text h4 text-center">' +
-                                'Spaghetti' +
+                                'Spaghetti' +   
                             '</p>' +
                         '</div>' +
                     ' </div>' +
@@ -589,7 +589,7 @@ function getMeal() {
                     '</div>' +
                 '</div>' +
                 '<div class="my-4" style="height: 10px; background-color: gray; width: 100%;"></div>' +
-                ' <p class="h1 text-center py-2 m-0">Option 4</p>' +
+                ' <p id="read56" class="h1 text-center py-2 m-0">Option 4 <span id="speak56" style="cursor: pointer;"><i class="fa-solid fa-volume-high"></i></span></p>' +
                 '<div class="d-flex flex-wrap gap-2 justify-content-center  rounded-3 p-3 choice"' +
                 'style="border: 2px solid orange; cursor: pointer;" data-bs-toggle="modal"' +
                 'data-bs-target="#dinner4" data-bs-dismiss="modal">' +
@@ -602,7 +602,7 @@ function getMeal() {
                         '</div>' +
                         '<div class="card-body">' +
                             '<p class="card-text h4 text-center">' +
-                                'Pasta' +
+                                'Pasta' +       
                             '</p>' +
                         '</div>' +
                     ' </div>' +
@@ -660,7 +660,7 @@ function getMeal() {
                 
 
                 '<div class="my-4" style="height: 10px; background-color: gray; width: 100%;"></div>' +
-                '<p class="h1 text-center py-2 m-0">Option 5</p>' +
+                '<p id="read57" class="h1 text-center py-2 m-0">Option 5 <span id="speak57" style="cursor: pointer;"><i class="fa-solid fa-volume-high"></i></span></p>' +
                 '<div class="d-flex flex-wrap gap-2 justify-content-center  rounded-3 p-3 choice"' +
                 'style="border: 2px solid orange; cursor: pointer;" data-bs-toggle="modal"' +
                 'data-bs-target="#dinner5" data-bs-dismiss="modal">' +
@@ -731,11 +731,23 @@ function getDaySuffix(day) {
 }
 
 let display_date = document.getElementById("display-date");
-display_date.innerHTML = " <div class='row'><div class='col text-center' style='margin-top: 30px'> <p >" + getGreeting() + ", Mr. Andrew McCracken" + "</p></div><div><div class='row'><div class='col text-center' style='padding-bottom: 30px' > <p >" + getCurrentDate() + "</p></div><div>";
+display_date.innerHTML = "<div id='read1'> <div class='row'><div  class='col text-center' style='margin-top: 30px'> <div id='speak1' style='cursor:pointer'><i class='fa-solid fa-volume-high'></i></div> <p>" + getGreeting() + ", Mr. Andrew McCracken" + "</p></div><div><div class='row'><div class='col text-center' style='padding-bottom: 30px' > <p >" + getCurrentDate() + "</p></div><div></div>";
 
 let meal = document.getElementById("meal");
-meal.innerHTML = getMeal();
+meal.innerHTML = getMeal() + " <span id='speak8' style='cursor: pointer;'><i class='fa-solid fa-volume-high'></i></span>";
 
+
+function speakText(message) {
+        if (message.trim() !== "") {
+            const speech = new SpeechSynthesisUtterance(message);
+            speech.lang = "en-US"; // Set language
+            speech.rate = 1; // Set speech rate
+            speech.pitch = 1; // Set pitch
+            speechSynthesis.speak(speech);
+        } else {
+            alert("No text to speak.");
+        }
+    }
 
 $(document).ready(function () {
 
@@ -865,6 +877,328 @@ $(document).ready(function () {
         activity.classList.remove("d-none");
     });
 
+    $(document).on("click", "#speak1", function () {
+        const message = document.getElementById('read1').textContent;
+        speakText(message);
+    });
+
+    $(document).on("click", "#speak2", function () {
+        const message = document.getElementById('read2').textContent;
+        speakText(message);
+    });
+
+     $(document).on("click", "#speak3", function () {
+        const message = document.getElementById('read3').textContent;
+        speakText(message);
+    });
+
+     $(document).on("click", "#speak4", function () {
+        const message = document.getElementById('read4').textContent;
+        speakText(message);
+    });
+
+     $(document).on("click", "#speak5", function () {
+        const message = document.getElementById('read5').textContent;
+        speakText(message);
+    });
+
+     $(document).on("click", "#speak6", function () {
+        const message = document.getElementById('read6').textContent;
+        speakText(message);
+    });
+
+     $(document).on("click", "#speak7", function () {
+        const message = document.getElementById('read7').textContent;
+        speakText(message);
+    });
+
+     $(document).on("click", "#speak8", function () {
+        const message = document.getElementById('meal').textContent;
+        speakText(message);
+    });
+
+    $(document).on("click", "#speak9", function () {
+        const message = document.getElementById('read9').textContent;
+        speakText(message);
+    });
+
+    $(document).on("click", "#speak10", function () {
+        const message = document.getElementById('read10').textContent;
+        speakText(message);
+    });
+
+    $(document).on("click", "#speak11", function () {
+        const message = document.getElementById('read11').textContent;
+        speakText(message);
+    });
+
+    $(document).on("click", "#speak12", function () {
+        const message = document.getElementById('read12').textContent;
+        speakText(message);
+    });
+
+    $(document).on("click", "#speak13", function () {
+        const message = document.getElementById('read13').textContent;
+        speakText(message);
+    });
+
+    $(document).on("click", "#speak14", function () {
+        const message = document.getElementById('read14').textContent;
+        speakText(message);
+    });
+
+    $(document).on("click", "#speak15", function () {
+        const message = document.getElementById('read15').textContent;
+        speakText(message);
+    });
+
+    $(document).on("click", "#speak16", function () {
+        const message = document.getElementById('read16').textContent;
+        speakText(message);
+    });
+
+    $(document).on("click", "#speak17", function () {
+        const message = document.getElementById('read17').textContent;
+        speakText(message);
+    });
+
+    $(document).on("click", "#speak18", function () {
+        const message = document.getElementById('read18').textContent;
+        speakText(message);
+    });
+
+    $(document).on("click", "#speak19", function () {
+        const message = document.getElementById('read19').textContent;
+        speakText(message);
+    });
+
+    $(document).on("click", "#speak20", function () {
+        const message = document.getElementById('read20').textContent;
+        speakText(message);
+    });
+
+    $(document).on("click", "#speak21", function () {
+        const message = document.getElementById('read21').textContent;
+        speakText(message);
+    });
+
+    $(document).on("click", "#speak22", function () {
+        const message = document.getElementById('read22').textContent;
+        speakText(message);
+    });
+
+    $(document).on("click", "#speak23", function () {
+        const message = document.getElementById('read23').textContent;
+        speakText(message);
+    });
+
+    $(document).on("click", "#speak24", function () {
+        const message = document.getElementById('read24').textContent;
+        speakText(message);
+    });
+
+    $(document).on("click", "#speak25", function () {
+        const message = document.getElementById('read25').textContent;
+        speakText(message);
+    });
+
+    $(document).on("click", "#speak26", function () {
+        const message = document.getElementById('read26').textContent;
+        speakText(message);
+    });
+
+    $(document).on("click", "#speak27", function () {
+        const message = document.getElementById('read27').textContent;
+        speakText(message);
+    });
+
+    $(document).on("click", "#speak28", function () {
+        const message = document.getElementById('read28').textContent;
+        speakText(message);
+    });
+
+    $(document).on("click", "#speak29", function () {
+        const message = document.getElementById('read29').textContent;
+        speakText(message);
+    });
+
+    $(document).on("click", "#speak30", function () {
+        const message = document.getElementById('read30').textContent;
+        speakText(message);
+    });
+
+     $(document).on("click", "#speak31", function () {
+        const message = document.getElementById('read31').textContent;
+        speakText(message);
+    });
+
+     $(document).on("click", "#speak32", function () {
+        const message = document.getElementById('read32').textContent;
+        speakText(message);
+    });
+
+     $(document).on("click", "#speak33", function () {
+        const message = document.getElementById('read33').textContent;
+        speakText(message);
+    });
+
+     $(document).on("click", "#speak34", function () {
+        const message = document.getElementById('read34').textContent;
+        speakText(message);
+    });
+
+     $(document).on("click", "#speak35", function () {
+        const message = document.getElementById('read35').textContent;
+        speakText(message);
+    });
+
+     $(document).on("click", "#speak36", function () {
+        const message = document.getElementById('read36').textContent;
+        speakText(message);
+    });
+
+     $(document).on("click", "#speak37", function () {
+        const message = document.getElementById('read37').textContent;
+        speakText(message);
+    });
+
+     $(document).on("click", "#speak38", function () {
+        const message = document.getElementById('read38').textContent;
+        speakText(message);
+    });
+
+     $(document).on("click", "#speak39", function () {
+        const message = document.getElementById('read39').textContent;
+        speakText(message);
+    });
+
+    $(document).on("click", "#speak40", function () {
+        const message = document.getElementById('read40').textContent;
+        speakText(message);
+    });
+
+    $(document).on("click", "#speak41", function () {
+        speakText("cereal plus sandwich plus actimel plus medication");
+    });
+
+    $(document).on("click", "#speak42", function () {
+        speakText("cereal plus sandwich plus actimel plus medication");
+    });
+
+     $(document).on("click", "#speak43", function () {
+        speakText(" Cup of Tea / Coffee plus Sandwich with ham and Butter plus Jam plus Yoghurt");
+    });
+    
+     $(document).on("click", "#speak44", function () {
+        speakText("Cup of Tea/ Coffee plus Sandwich with Omelette plus Jam plus Yoghurt");
+    });
+    
+    $(document).on("click", "#speak45", function () {
+        const message = document.getElementById('read45').textContent;
+        speakText(message);
+    });
+
+    $(document).on("click", "#speak46", function () {
+        const message = document.getElementById('read46').textContent;
+        speakText(message);
+    });
+
+    $(document).on("click", "#speak47", function () {
+        const message = document.getElementById('read47').textContent;
+        speakText(message);
+    });
+
+    $(document).on("click", "#speak48", function () {
+        const message = document.getElementById('read48').textContent;
+        speakText(message);
+    });
+
+    $(document).on("click", "#speak49", function () {
+        const message = document.getElementById('read49').textContent;
+        speakText(message);
+    });
+
+    $(document).on("click", "#speak50", function () {
+        const message = document.getElementById('read50').textContent;
+        speakText(message);
+    });
+
+    $(document).on("click", "#speak51", function () {
+        const message = document.getElementById('read51').textContent;
+        speakText(message);
+    });
+
+    $(document).on("click", "#speak52", function () {
+        const message = document.getElementById('read52').textContent;
+        speakText(message);
+    });
+
+    $(document).on("click", "#speak53", function () {
+        speakText("Mashed Potatoes plus Already made sauce plus Vegetable plus Cup of tea/coffee");
+    });
+
+    $(document).on("click", "#speak54", function () {
+        speakText("Rice plus Already made sauce plus Vegetable plus Cup of tea/coffee");
+    });
+
+    $(document).on("click", "#speak55", function () {
+        speakText("Spaghetti plus Already made sauce plus Vegetable plus Cup of tea/coffee");
+    });
+
+    $(document).on("click", "#speak56", function () {
+        speakText("Pasta plus Already made sauce plus Vegetable plus Cup of tea/coffee");
+    });
+
+    $(document).on("click", "#speak57", function () {
+        speakText("Cheese and onion pie with corned beef and baked beans");
+    });
+
+    $(document).on("click", "#speak58", function () {
+        const message = document.getElementById('read58').textContent;
+        speakText(message);
+    });
+
+    $(document).on("click", "#speak59", function () {
+        const message = document.getElementById('read59').textContent;
+        speakText(message);
+    });
+
+    $(document).on("click", "#speak59", function () {
+        const message = document.getElementById('read59').textContent;
+        speakText(message);
+    });
+
+    $(document).on("click", "#speak59", function () {
+        const message = document.getElementById('read59').textContent;
+        speakText(message);
+    });
+
+
+    $(document).on("click", "#speak60", function () {
+        const message = document.getElementById('read60').textContent;
+        speakText(message);
+    });
+
+    $(document).on("click", "#speak61", function () {
+        const message = document.getElementById('read61').textContent;
+        speakText(message);
+    });
+
+    $(document).on("click", "#speak62", function () {
+        const message = document.getElementById('read62').textContent;
+        speakText(message);
+    });
+
+    $(document).on("click", "#speak63", function () {
+        const message = document.getElementById('read63').textContent;
+        speakText(message);
+    });
+
+    $(document).on("click", "#speak64", function () {
+        const message = document.getElementById('read64').textContent;
+        speakText(message);
+    });
+ 
 });
 
 
