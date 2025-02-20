@@ -1158,15 +1158,7 @@ $(document).ready(function () {
         speakText(message);
     });
 
-    $(document).on("click", "#speak59", function () {
-        const message = document.getElementById('read59').textContent;
-        speakText(message);
-    });
-
-    $(document).on("click", "#speak59", function () {
-        const message = document.getElementById('read59').textContent;
-        speakText(message);
-    });
+   
 
     $(document).on("click", "#speak59", function () {
         const message = document.getElementById('read59').textContent;
