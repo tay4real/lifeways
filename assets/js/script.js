@@ -1190,6 +1190,11 @@ $(document).ready(function () {
         const message = document.getElementById('read64').textContent;
         speakText(message);
     });
+
+    $(document).on("click", "#speak65", function () {
+        const message = document.getElementById('read65').textContent;
+        speakText(message);
+    });
  
 });
 
